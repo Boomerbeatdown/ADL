@@ -1,0 +1,109 @@
+
+@font-face {
+    font-family: 'Rye-Regular';
+    src: url('fonts/Rye-Regular.ttf') format('truetype');
+    /* Add additional src lines for different font formats if needed */
+}
+
+body {
+    background: #067F38;
+    color: #0039ac;
+    font-family: 'Rye-Regular', sans-serif;
+    text-shadow: #FAB117 1px 0 10px;   
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    font-size: 2em;
+}
+
+.left-word,
+.right-word {
+    font-size: 2em;
+    padding: 200px;
+}
+
+.ADL-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    flex-direction: column;
+    font-size: 2em;
+}
+
+img {
+    max-width: 4em;
+    max-height: 4em;
+}
+
+img:hover {
+    transform: scale(1.5);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.styled-button {
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    text-shadow: 0px 3px 2px #ffffff;
+    -webkit-box-shadow: 0px 0px 30px #333333;
+    -moz-box-shadow: 0px 0px 30px #333333;
+    box-shadow: 0px 0px 30px #333333;
+    font-family: Georgia;
+    color: #333333;
+    font-size: 20px;
+    background: #FAB117;
+    padding: 10px 20px 10px 20px;
+    border: solid #333333 2px;
+    text-decoration: none;
+    margin: 1em;
+}
+
+.styled-button:hover {
+    background: #0039ac;
+    background-image: -webkit-linear-gradient(top, #0039ac, #067F38);
+    background-image: -moz-linear-gradient(top, #0039ac, #067F38);
+    background-image: -ms-linear-gradient(top, #0039ac, #067F38);
+    background-image: -o-linear-gradient(top, #0039ac, #067F38);
+    background-image: linear-gradient(to bottom, #0039ac, #067F38);
+    text-decoration: none;
+  }
+
+  .table-striped {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-striped th, .table-striped td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .table-striped th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .table-striped tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table-striped tbody tr:hover {
+    background-color: #e5e5e5;
+  }
+  
