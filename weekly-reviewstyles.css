@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'Rye-Regular';
-    src: url('fonts/Rye-Regular.ttf') format('truetype');
+    src: url('../fonts/Rye-Regular.ttf') format('truetype');
     /* Add additional src lines for different font formats if needed */
 }
 
@@ -9,7 +9,7 @@ body {
     background: #067F38;
     color: #0039ac;
     font-family: 'Rye-Regular', sans-serif;
-    text-shadow: #FAB117 1px 0 10px;   
+    text-shadow: #FAB117 1px 0 10px;
 }
 
 .header {
@@ -18,32 +18,21 @@ body {
     align-items: center;
     text-align: center;
     flex-direction: row;
-    font-size: 2em;
+    font-size: 4em;
+    padding: 0.5em;
 }
 
-.left-word,
-.right-word {
-    font-size: 2em;
-    padding: 200px;
-}
-
-.ADL-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex: 1;
-    flex-direction: column;
-    font-size: 2em;
+.h1-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  text-align: center;      /* Center text inside the container */
+  font-size: 1.25em;
 }
 
 img {
-    max-width: 4em;
-    max-height: 4em;
-}
-
-img:hover {
-    transform: scale(1.5);
+  max-width: 4em;
+  max-height: 4em;
 }
 
 main {
@@ -56,6 +45,177 @@ main {
     
 }
 
+.section-divider {
+  width: 100%;
+  height: .25em; /* Thickness of the divider */
+  background: #333333; /* Solid color */
+  background-image: linear-gradient(to right, #000000, #333333, #000000); /* Gradient effect */
+  margin-top: 40px; /* Space around the divider */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 2em;
+  width: 100%; /* Full width */
+}
+
+.box-1 header   {
+  font-size: 3.25em;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+.box-1 {
+  margin-left: 0;
+  background-color: #000000;
+  color: #72FF13;
+  border: #72FF13 solid .25em;
+  font-family: sans-serif;
+  text-shadow: none;
+  padding: 2em; /* Increased padding */
+  flex: 1;
+  margin: 0 10px;
+  text-align: left;
+  margin-top: 2em;
+}
+
+.box-2 header   {
+  font-size: 3.25em;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+.box-2 {
+  background-color: #800080;
+  color: #ffffff;
+  border: #ffffff solid .25em;
+  font-family: sans-serif;
+  text-shadow: none;
+  padding: 2em; /* Increased padding */
+  flex: 1;
+  margin: 0 10px;
+  text-align: left;
+  margin-top: 2em;
+}
+
+.box-3 header   {
+  font-size: 3.25em;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+.box-3 {
+  background-color: #0000ff;
+  color: #a9a9a9;
+  border: #a9a9a9 solid .25em;
+  font-family: sans-serif;
+  text-shadow: none;
+  padding: 2em; /* Increased padding */
+  flex: 1;
+  margin: 0 10px;
+  text-align: left;
+  margin-top: 2em;
+}
+
+.box-4 header   {
+  font-size: 3.25em;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+.box-4 {
+  background-color: #008000;
+  color: #ffff00;
+  border: #ffff00 solid .25em;
+  font-family: sans-serif;
+  text-shadow: none;
+  padding: 2em; /* Increased padding */
+  flex: 1;
+  margin: 0 10px;
+  text-align: left;
+  margin-top: 2em;
+}
+
+.box-5 header   {
+  font-size: 3.25em;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+.box-5 {
+  background-color: #ddd;
+  color: #000000;
+  border: #000000 solid .25em;
+  font-family: sans-serif;
+  text-shadow: none;
+  padding: 2em; /* Increased padding */
+  flex: 1;
+  margin: 0 10px;
+  text-align: left;
+  margin-top: 2em;
+}
+
+.box-6 header   {
+  font-size: 3.25em;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+.box-6 {
+  background-color: #ddd;
+  color: #000000;
+  border: #000000 solid .25em;
+  font-family: sans-serif;
+  text-shadow: none;
+  padding: 2em; /* Increased padding */
+  flex: 1;
+  margin: 0 10px;
+  text-align: left;
+  margin-top: 2em;
+}
+
+.box-7 header   {
+  font-size: 3.25em;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+.box-7 {
+  background-color: #ddd;
+  color: #000000;
+  border: #000000 solid .25em;
+  font-family: sans-serif;
+  text-shadow: none;
+  padding: 2em; /* Increased padding */
+  flex: 1;
+  margin: 0 10px;
+  text-align: left;
+  margin-top: 2em;
+}
+
+.box-8 header   {
+  font-size: 3.25em;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+.box-8 {
+  background-color: #ddd;
+  color: #000000;
+  border: #000000 solid .25em;
+  margin-right: 0;
+  font-family: sans-serif;
+  text-shadow: none;
+  padding: 2em; /* Increased padding */
+  flex: 1;
+  margin: 0 10px;
+  text-align: left;
+  margin-top: 2em;
+}
+
 .styled-button {
     -webkit-border-radius: 60;
     -moz-border-radius: 60;
@@ -64,7 +224,7 @@ main {
     -webkit-box-shadow: 0px 0px 30px #333333;
     -moz-box-shadow: 0px 0px 30px #333333;
     box-shadow: 0px 0px 30px #333333;
-    font-family: Georgia;
+    font-family: Rye-Regular;
     color: #333333;
     font-size: 20px;
     background: #FAB117;
@@ -84,26 +244,130 @@ main {
     text-decoration: none;
   }
 
-  .table-striped {
+  .power-rankings-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 100%;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#table-rankings {
     width: 100%;
     border-collapse: collapse;
-  }
-  
-  .table-striped th, .table-striped td {
+    margin-top: 20px;
+}
+
+#table-rankings th, #table-rankings td {
     padding: 10px;
-    border: 1px solid #ddd;
-  }
-  
-  .table-striped th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-  }
-  
-  .table-striped tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  .table-striped tbody tr:hover {
-    background-color: #e5e5e5;
-  }
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#table-rankings th {
+    background-color: #007bff;
+    color: white;
+}
+
+#table-rankings tr:hover {
+    background-color: #f1f1f1;
+}
+
+#table-rankings td {
+    text-align: center;
+}
+
+.news-container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#h1news {
+  text-align: center;
+  color: #333;
+}
+
+#h2news {
+  color: #444;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.headline {
+  margin-bottom: 20px;
+}
+
+.quick-hits {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quick-hits li {
+  background: #e9e9e9;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.recap-container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#h2recap {
+  color: #444;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.game-recap {
+  margin-bottom: 20px;
+}
+
+.overall-highlights {
+  list-style-type: none;
+  padding: 0;
+}
+
+.overall-highlights li {
+  background: #e9e9e9;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border-radius: 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
   
