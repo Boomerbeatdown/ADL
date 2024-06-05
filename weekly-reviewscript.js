@@ -46,22 +46,20 @@ function rankTeams(teams) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    rankTeams(teams);
-});
-
-const links = document.querySelectorAll('nav a');
-
-links.forEach(link => {
-  link.addEventListener('click', event => {
-    event.preventDefault();
-    const targetId = link.getAttribute('href');
-    const targetContainer = document.querySelector(targetId);
-    const currentContainer = document.querySelector('.week-container.active');
-
-    if (currentContainer) {
-      currentContainer.classList.remove('active');
-    }
-
-    targetContainer.classList.add('active');
+    const links = document.querySelectorAll('nav a');
+  
+    links.forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetContainer = document.querySelector(targetId);
+        const currentContainer = document.querySelector('.recap-container.active');
+  
+        if (currentContainer) {
+          currentContainer.classList.remove('active');
+        }
+  
+        targetContainer.classList.add('active');
+      });
+    });
   });
-});

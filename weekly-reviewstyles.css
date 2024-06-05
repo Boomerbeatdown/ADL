@@ -387,20 +387,33 @@ p {
   border-radius: 4px;
 }
 
-.footer {
+#footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   margin-top: 20px;
   padding: 10px;
-  background: #333;
   color: #fff;
   border-radius: 8px;
 }
 
-footer a:hover {
+.list-container {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.list-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-container li {
+  margin-bottom: 10px;
+}
+
+.list-container a:hover {
   text-decoration: underline;
 }
-  
