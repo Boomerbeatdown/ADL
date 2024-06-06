@@ -322,13 +322,15 @@ p {
 }
 
 nav {
-  position: fixed;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
+  background-color: #000000;
   color: #fff;
-  padding: 10px 0;
+  padding: 1em 0;
 }
 
 nav ul {
@@ -338,7 +340,8 @@ nav ul {
 }
 
 nav li {
-  margin: 0 10px;
+  margin: 0 .5em;
+  padding: 0.5em;
 }
 
 nav a {
@@ -355,7 +358,7 @@ nav a {
   display: flex;
   flex-direction: column;
   flex: 1;
-  max-width: 800px;
+  max-width: 100%;
   margin: auto;
   background: #fff;
   padding: 20px;
