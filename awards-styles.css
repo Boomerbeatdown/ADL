@@ -63,3 +63,42 @@ img:hover {
     transform: scale(1.5);
 }
 
+.award-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.award-row {
+    display: flex;
+    width: 100%;
+}
+
+.award-container {
+    flex: 1;
+    margin: 10px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.award-container.most-valuable {
+    background-color: #ccc;
+    padding: 30px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .container {
+    flex-basis: 45%; /* adjust the width of each container */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
