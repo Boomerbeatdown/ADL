@@ -391,20 +391,17 @@ p {
 }
 
 #footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 20px;
-  padding: 10px;
-  color: #fff;
-  border-radius: 8px;
+  flex-basis: 50%; /* adjust the width of each container */
+  margin: 1em;
+  padding: 1em;
 }
 
 .list-container {
   display: inline-flex;
   flex-direction: column;
-  margin: 10px;
+  margin: .5em;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 .list-container ul {
