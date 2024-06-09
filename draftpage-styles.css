@@ -9,9 +9,21 @@ body {
     background: #067F38;
     color: #0039ac;
     font-family: 'Rye-Regular', sans-serif;
-    text-shadow: #FAB117 1px 0 10px;   
+    text-shadow: #FAB117 1px 0 10px;  
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    font-size: 4em;
+    padding: 0.5em;
+}
 img {
     max-width: 4em;
     max-height: 4em;
