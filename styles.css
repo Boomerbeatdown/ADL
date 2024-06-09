@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'Rye-Regular';
-    src: url('.home/boomer/adl-website/fonts/Rye-Regular.ttf') format('truetype');
+    src: url('./adl-website/fonts/Rye-Regular.ttf') format('truetype');
     /* Add additional src lines for different font formats if needed */
 }
 

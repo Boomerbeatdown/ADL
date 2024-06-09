@@ -84,8 +84,21 @@ img:hover {
 .award-container.most-valuable {
     background-color: #ccc;
     padding: 30px;
-    font-size: 24px;
     text-align: center;
+}
+
+#toggle-button {
+  background-color: #4CAF50; /* green background */
+  color: #ffffff; /* white text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#toggle-button:hover {
+  background-color: #3e8e41; /* darker green on hover */
 }
 
 .container-flex {
@@ -162,8 +175,4 @@ img:hover {
     background: #333333; /* Solid color */
     background-image: linear-gradient(to right, #000000, #333333, #000000); /* Gradient effect */
     margin-top: 40px; /* Space around the divider */
-  }
-
-  #preseason-all-adl-teams {
-    display: none; /* hide the preseason all-adl teams section by default */
   }
