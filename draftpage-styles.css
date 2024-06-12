@@ -210,9 +210,10 @@ main {
   display: flex;
   flex-basis: 45%;
   flex: 1;
-  background-color: #f7f7f7;
-  padding: 20px;
-  border: 1px solid #ddd;
+  flex-direction: column;
+  background-color: #067F38;
+  padding: 1em;
+  font-size: 1em;
 }
 
 .container-draft-grade {
