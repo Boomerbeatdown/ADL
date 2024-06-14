@@ -199,9 +199,10 @@ main {
 
 .container-draft-result {
   display: flex;
+  flex-direction: column;
   flex-basis: 45%;
   flex: 1;
-  background-color: #f7f7f7;
+  background-color: #067F38;
   padding: 20px;
   border: 1px solid #ddd;
 }
@@ -227,6 +228,7 @@ main {
 
 .container-rookie-draft-result {
   display: flex;
+  flex-direction: column;
   flex-basis: 45%;
   flex: 1;
   background-color: #f7f7f7;
@@ -291,4 +293,29 @@ h2 {
 
 .list-container a:hover {
   text-decoration: underline;
+}
+
+.draft-results {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#draft-results th, #draft-results td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-family: sans-serif;
+  text-shadow: none;
+}
+
+#draft-results th {
+  background-color: #f0f0f0;
+}
+
+#draft-results tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#draft-results tr:nth-child(odd) {
+  background-color: #000000;
 }
