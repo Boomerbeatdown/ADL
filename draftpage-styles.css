@@ -97,26 +97,24 @@ main {
   margin-top: 40px; /* Space around the divider */
 }
 
-#Draft-Information {
+.Draft-Information {
   display: flex;
   flex: 1;
   flex-direction: column;
   align-items: center;
 }
 
-.container-row {
+#container-row {
   display: flex;
   flex: 1;
+  flex-basis: 30%;
   flex-direction: row;
-  flex-basis: 45%;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-
 .container-draft-budget {
   display: flex;
-  flex-basis: 45%;
   flex: 1;
   flex-direction: column;
   background-color: #067F38;
@@ -190,7 +188,6 @@ main {
 
 .container-rookie-draft-lottery{
   display: flex;
-  flex-basis: 45%;
   flex: 1;
   flex-direction: column;
   background-color: #067F38;
@@ -200,7 +197,6 @@ main {
 .container-draft-result {
   display: flex;
   flex-direction: column;
-  flex-basis: 45%;
   flex: 1;
   background-color: #067F38;
   padding: 20px;
@@ -209,7 +205,6 @@ main {
 
 .container-rookie-draft-order {
   display: flex;
-  flex-basis: 45%;
   flex: 1;
   flex-direction: column;
   background-color: #067F38;
@@ -219,9 +214,8 @@ main {
 
 .container-draft-grade {
   display: flex;
-  flex-basis: 45%;
   flex: 1;
-  background-color: #f7f7f7;
+  background-color: #067F38;
   padding: 20px;
   border: 1px solid #ddd;
 }
@@ -229,9 +223,8 @@ main {
 .container-rookie-draft-result {
   display: flex;
   flex-direction: column;
-  flex-basis: 45%;
   flex: 1;
-  background-color: #f7f7f7;
+  background-color: #067F38;
   padding: 20px;
   border: 1px solid #ddd;
 }
@@ -240,7 +233,8 @@ main {
   display: flex;
   flex-basis: 45%;
   flex: 1;
-  background-color: #f7f7f7;
+  flex-direction: column;
+  background-color: #067F38;
   padding: 20px;
   border: 1px solid #ddd;
 }
@@ -318,4 +312,40 @@ h2 {
 
 #draft-results tr:nth-child(odd) {
   background-color: #000000;
+}
+
+.draft-trades-body tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+.draft-trades-body tr:hover {
+  background-color: #e0e0e0;
+}
+
+.draft-trades-body td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.draft-trades-body th {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.draft-trades-body th:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.draft-trades-body th:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.draft-trades {
+  display: none;
+}
+
+.toggleTrades:checked + #draft-trades {
+  display: block;
 }
