@@ -220,6 +220,21 @@ main {
   border: 1px solid #ddd;
 }
 
+table#draft-grades {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table#draft-grades th, table#draft-grades td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table#draft-grades th {
+  background-color: #f0f0f0;
+}
+
 .container-rookie-draft-result {
   display: flex;
   flex-direction: column;
@@ -237,6 +252,52 @@ main {
   background-color: #067F38;
   padding: 20px;
   border: 1px solid #ddd;
+}
+
+#draft-trades {
+  margin: 20px;
+}
+
+#toggle-trades {
+  background-color: #0039ac;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#toggle-trades:hover {
+  background-color: #f0f0f0;
+}
+
+#trades-container {
+  display: none; /* hide trades by default */
+}
+
+#trades-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-shadow: none;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #000000;
+}
+
+#trades-table th, #trades-table td {
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: left;
+}
+
+#trades-table tr:nth-child(odd) {
+  background-color: #333333;
+}
+
+#trades-table tr:hover {
+  background-color: #e0e0e0;
 }
 
 .container-rookie-draft-trades {

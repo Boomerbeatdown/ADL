@@ -303,58 +303,71 @@
             <div class="container-row">
               <div class="container-draft-trades">
                 <h2>Draft Trades</h2>
-                <table id="draft-trades">
-                  <thead>
-                    <tr>
-                      <th>Trade #</th>
-                      <th>Team 1</th>
-                      <th>Team 2</th>
-                      <th>Players Traded</th>
-                    </tr>
-                  </thead>
-                  <tbody id="draft-trades-body">
-                    <!-- trades will be displayed here -->
-                    <tr>
-                      <td>1</td>
-                      <td>Team 1</td>
-                      <td>Team 2</td>
-                      <td>Player 1, Player 2</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Team 3</td>
-                      <td>Team 4</td>
-                      <td>Player 3, Player 4</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Team 5</td>
-                      <td>Team 6</td>
-                      <td>Player 5, Player 6</td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Team 7</td>
-                      <td>Team 8</td>
-                      <td>Player 7, Player 8</td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>Team 1</td>
-                      <td>Team 3</td>
-                      <td>Player 9, Player 10</td>
-                    </tr>
-                  </tbody>
-                </table>
-                
-                <input id="toggleTrades" type="checkbox" />
-                <label for="toggleTrades">Toggle Trades</label>
+                  <button id="toggle-trades">Show/Hide Trades</button>
+                  <div id="trades-container">
+                    <table id="trades-table">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Team</th>
+                          <th>Player/Asset Received</th>
+                          <th>Team </th>
+                          <th>Player/Asset Received</th>
+                        </tr>
+                      </thead>
+                      <tbody id="trades-body">
+                        <tr>
+                          <td>08/10/24</td>
+                          <td>???</td>
+                          <td>Pick/Player/Money</td>
+                          <td>???</td>
+                          <td>Pick/Player/Money</td>
+                        </tr>
+                        <tr>
+                          <td>08/10/24</td>
+                          <td>???</td>
+                          <td>Pick/Player/Money</td>
+                          <td>???</td>
+                          <td>Pick/Player/Money</td>
+                        </tr>
+                        <!-- add more trades here -->
+                      </tbody>
+                    </table>
+                    <script src="drafttrade-script.js"></script>
+                  </div>
               </div>
               <div class="section-divider"></div>
             <div class="container-row">
             <div class="container-draft-grade">
               <h2>Draft Grade</h2>
-              <!-- content here -->
+              <table id="draft-grades">
+                <tr>
+                  <th>Grade</th>
+                  <th>Team Name</th>
+                  <th>Highlights/Lowlights</th>
+                </tr>
+                <tr>
+                  <td rowspan="2">Hillary</td>
+                  <td>Advanced Web</td>
+                  <td>75</td>
+                </tr>
+                <tr>
+                  <td>Operating System</td>
+                  <td>60</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Lary</td>
+                  <td>Advanced Web</td>
+                  <td>80</td>
+                </tr>
+                <tr>
+                  <td>Operating System</td>
+                  <td>75</td>
+                </tr>
+                <tr>
+                  <td colspan="3">Total Average: 72.5</td>
+                </tr>
+              </table>
             </div>
             <div class="section-divider"></div>
             <div class="container-row">
