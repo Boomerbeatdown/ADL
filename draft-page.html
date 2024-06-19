@@ -480,54 +480,165 @@
         <section id="Draft-Information">
           <div class="container-row">
             <div class="container-draft-budget">
-              <h2>Draft Budget History(2024)</h2>
-              <table>
-                <tr class="table-row-draft-budget-header">
-                  <th>Team</th>
-                  <th>Money Available</th>
-                  <th>Roster</th>
-                </tr>
-                <tr class="table-row-stockton-stormbringers">
-                  <td>Stockton Stormbringers</td>
-                  <td>?</td>
-                  <td>0/32</td>
-                </tr>
-                <tr class="table-row-honolulu-huskies">
-                  <td>Honolulu Huskies</td>
-                  <td>?</td>
-                  <td>0/32</td>
-                </tr>
-                <tr class="table-row-brooklyn-banditos">
-                  <td>Brooklyn Banditos</td>
-                  <td>?</td>
-                  <td>0/32</td>
-                </tr>
-                <tr class="table-row-calgary-catfish">
-                  <td>Calgary Catfish</td>
-                  <td>?</td>
-                  <td>0/32</td>
-                </tr>
-                <tr class="table-row-teamname1">
-                  <td>Team Name</td>
-                  <td>?</td>
-                  <td>0/32</td>
-                </tr>
-                <tr class="table-row-teamname2">
-                  <td>Team Name</td>
-                  <td>?</td>
-                  <td>0/32</td>
-                </tr>
-                <tr class="table-row-teamname3">
-                  <td>Team Name</td>
-                  <td>?</td>
-                  <td>0/32</td>
-                </tr>
-                <tr class="table-row-teamname4">
-                  <td>Team Name</td>
-                  <td>?</td>
-                  <td>0/32</td>
-                </tr>
-              </table>
+                <h2>Draft Budget History
+                  <select id="year-select">
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                  </select>
+                </h2>
+              
+                <div id="2024" class="table-container">
+                  <table>
+                    <tr class="table-row-draft-budget-header">
+                      <th>Team</th>
+                      <th>Money Available</th>
+                      <th>Roster</th>
+                    </tr>
+                    <tr class="table-row-stockton-stormbringers">
+                      <td>Stockton Stormbringers</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-honolulu-huskies">
+                      <td>Honolulu Huskies</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-brooklyn-banditos">
+                      <td>Brooklyn Banditos</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-calgary-catfish">
+                      <td>Calgary Catfish</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-teamname1">
+                      <td>Team Name</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-teamname2">
+                      <td>Team Name</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-teamname3">
+                      <td>Team Name</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-teamname4">
+                      <td>Team Name</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                  </table>
+                </div>
+              
+                <div id="2025" class="table-container hidden">
+                  <table>
+                    <tr class="table-row-draft-budget-header">
+                      <th>Team</th>
+                      <th>Money Available</th>
+                      <th>Roster</th>
+                    </tr>
+                    <tr class="table-row-stockton-stormbringers">
+                      <td>Stockton Stormbringers</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-honolulu-huskies">
+                      <td>Honolulu Huskies</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-brooklyn-banditos">
+                      <td>Brooklyn Banditos</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-calgary-catfish">
+                      <td>Calgary Catfish</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-teamname1">
+                      <td>Team Name</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-teamname2">
+                      <td>Team Name</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-teamname3">
+                      <td>Team Name</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-teamname4">
+                      <td>Team Name</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                  </table>
+                </div>
+              
+                <div id="2026" class="table-container hidden">
+                  <table>
+                    <tr class="table-row-draft-budget-header">
+                      <th>Team</th>
+                      <th>Money Available</th>
+                      <th>Roster</th>
+                    </tr>
+                    <tr class="table-row-stockton-stormbringers">
+                      <td>Stockton Stormbringers</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-honolulu-huskies">
+                      <td>Honolulu Huskies</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-brooklyn-banditos">
+                      <td>Brooklyn Banditos</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-calgary-catfish">
+                      <td>Calgary Catfish</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-teamname1">
+                      <td>Team Name</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-teamname2">
+                      <td>Team Name</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-teamname3">
+                      <td>Team Name</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                    <tr class="table-row-teamname4">
+                      <td>Team Name</td>
+                      <td>?</td>
+                      <td>0/32</td>
+                    </tr>
+                  </table>
+                </div>
+              
+                <script src="draftbudgethistory-script.js"></script>
             </div>
             </div>
             <div class="section-divider"></div>
@@ -691,8 +802,77 @@
           <div class="section-divider"></div>
           <div class="container-row">
             <div class="container-draft-result">
-              <h2>Draft Result History</h2>
-              <!-- content here -->
+              <div class="container-row">
+                <div class="container-draft-result">
+                  <h2>Draft Result</h2>
+                  <select id="year-select">
+                    <option value="2024" selected>2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                  </select>
+                  <div id="draft-results-2024">
+                    <table id="draft-results-2024">
+                      <thead>
+                        <tr>
+                          <th>Round</th>
+                          <th>Stockton Stormbringers</th>
+                          <th>Honolulu Huskies</th>
+                          <th>Brooklyn Banditos</th>
+                          <th>Calgary Catfish</th>
+                          <th>Team 5</th>
+                          <th>Team 6</th>
+                          <th>Team 7</th>
+                          <th>Team 8</th>
+                        </tr>
+                      </thead>
+                      <tbody id="draft-results-body-2024">
+                        <!-- JavaScript will populate this table body -->
+                      </tbody>
+                    </table>
+                  </div>
+                  <div id="draft-results-2025" style="display: none;">
+                    <table id="draft-results-2025">
+                      <thead>
+                        <tr>
+                          <th>Round</th>
+                          <th>Stockton Stormbringers</th>
+                          <th>Honolulu Huskies</th>
+                          <th>Brooklyn Banditos</th>
+                          <th>Calgary Catfish</th>
+                          <th>Team 5</th>
+                          <th>Team 6</th>
+                          <th>Team 7</th>
+                          <th>Team 8</th>
+                        </tr>
+                      </thead>
+                      <tbody id="draft-results-body-2025">
+                        <!-- JavaScript will populate this table body -->
+                      </tbody>
+                    </table>
+                  </div>
+                  <div id="draft-results-2026" style="display: none;">
+                    <table id="draft-results-2026">
+                      <thead>
+                        <tr>
+                          <th>Round</th>
+                          <th>Stockton Stormbringers</th>
+                          <th>Honolulu Huskies</th>
+                          <th>Brooklyn Banditos</th>
+                          <th>Calgary Catfish</th>
+                          <th>Team 5</th>
+                          <th>Team 6</th>
+                          <th>Team 7</th>
+                          <th>Team 8</th>
+                        </tr>
+                      </thead>
+                      <tbody id="draft-results-body-2026">
+                        <!-- JavaScript will populate this table body -->
+                      </tbody>
+                      <script src="draftresulthistory-script.js"></script>
+                    </table>
+                    
+              </div>
+
             </div>
             <div class="section-divider"></div>
             <div class="container-rookie-draft-order">

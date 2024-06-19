@@ -433,3 +433,19 @@ h2 {
 .hidden {
   display: none;
 }
+
+/* Add some basic styling to make the tables look decent */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
