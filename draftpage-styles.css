@@ -449,3 +449,22 @@ th, td {
 th {
   background-color: #f0f0f0;
 }
+
+/* Hide the tables by default */
+.hidden {
+  display: none;
+}
+
+/* Show the table when it's visible */
+.visible {
+  display: table;
+}
+
+/* Add some basic styling to the navigation buttons */
+.nav-buttons {
+  margin-bottom: 20px;
+}
+
+.nav-buttons button {
+  margin-right: 10px;
+}

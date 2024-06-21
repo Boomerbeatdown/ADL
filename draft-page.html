@@ -18,8 +18,8 @@
             <span id="minutes">00</span> minutes
             <span id="seconds">00</span> seconds
         </div>
+        <script src="drafttimerscript.js"></script>
       </div>
-      <script src="drafttimerscript.js"></script>
     <main>
       <h1>Current Year</h1>
         <section id="Draft-Information">
@@ -804,7 +804,7 @@
           <div class="container-row">
             <div class="container-draft-result">
               <div class="container-row">
-                <div class="container-draft-result">
+                <div class="container-draft-result-history">
                   <h2>Draft Result</h2>
                   <select id="year-select">
                     <option value="2024" selected>2024</option>
@@ -1174,8 +1174,84 @@
           <div class="container-row">
             <div class="container-draft-grade">
               <h2>Draft Grade History</h2>
-              <!-- content here -->
+              <button id="btn-2024">Show 2024</button>
+              <button id="btn-2025">Show 2025</button>
+              <button id="btn-2026">Show 2026</button>
+          
+              <table id="2024">
+                <tr>
+                  <th>Grade</th>
+                  <th>Team Name</th>
+                  <th>Best Pick/Worst Pick</th>
+                </tr>
+                <tr>
+                  <td rowspan="2">A+-F</td>
+                  <td rowspan="2">Stockton Stormbringers</td>
+                  <td>?-$?</td>
+                </tr>
+                <tr>
+                  <td>?-$?</td>
+                </tr>
+                <td rowspan="2">A+-F</td>
+                <td rowspan="2">Honolulu Huskies</td>
+                <td>?-$?</td>
+              </tr>
+              <tr>
+                <td>?-$?</td>
+              </tr>
+              <td rowspan="2">A+-F</td>
+              <td rowspan="2">Brooklyn Banditos</td>
+              <td>?-$?</td>
+            </tr>
+            <tr>
+              <td>?-$?</td>
+            </tr>
+            <td rowspan="2">A+-F</td>
+            <td rowspan="2">Calgary Catfish</td>
+            <td>?-$?</td>
+          </tr>
+          <tr>
+            <td>?-$?</td>
+          </tr>
+          <td rowspan="2">A+-F</td>
+          <td rowspan="2">Team Name</td>
+          <td>?-$?</td>
+          </tr>
+          <tr>
+            <td>?-$?</td>
+          </tr>
+          <td rowspan="2">A+-F</td>
+          <td rowspan="2">Team Name</td>
+          <td>?-$?</td>
+          </tr>
+          <tr>
+            <td>?-$?</td>
+          </tr>
+          <td rowspan="2">A+-F</td>
+          <td rowspan="2">Team Name</td>
+          <td>?-$?</td>
+          </tr>
+          <tr>
+            <td>?-$?</td>
+          </tr>
+          <td rowspan="2">A+-F</td>
+          <td rowspan="2">Team Name</td>
+          <td>?-$?</td>
+          </tr>
+          <tr>
+            <td>?-$?</td>
+          </tr>
+              </table>
+          
+              <table id="2025" style="display: none;">
+                <!-- Add your 2025 table data here -->
+              </table>
+          
+              <table id="2026" style="display: none;">
+                <!-- Add your 2026 table data here -->
+              </table>
             </div>
+          </div>
             <div class="section-divider"></div>
             <div class="container-rookie-draft-result">
               <h2>Rookie Draft Result History</h2>
@@ -1183,12 +1259,6 @@
             </div>
           </div>
           <div class="section-divider"></div>
-          <div class="container-row">
-            <div class="container-draft-trades">
-              <h2>Draft Trades History</h2>
-              <!-- content here -->
-            </div>
-            <div class="section-divider"></div>
             <div class="container-rookie-draft-grade">
               <h2>Rookie Draft Grade History</h2>
               <!-- content here -->
