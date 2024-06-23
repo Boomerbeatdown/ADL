@@ -144,29 +144,29 @@ main {
 }
 
 .table-row-brooklyn-banditos {
-  color: #0000ff;
-  background-color: #a9a9a9;
+  color: #a9a9a9;
+  background-color: #0000ff;
   font-family: sans-serif;
   text-shadow: none; 
 }
 
 .table-row-calgary-catfish {
-  color: #008000;
-  background-color: #ffff00;
+  color: #ffff00;
+  background-color: #008000;
   font-family: sans-serif;
   text-shadow: none; 
 }
 
-.table-row-teamname1 {
-  color: #000000;
-  background-color: #ddd;
+.table-row-baycity-pandas {
+  color: #f0f0f0;
+  background-color: #000000;
   font-family: sans-serif;
   text-shadow: none; 
 }
 
-.table-row-teamname2 {
-  color: #000000;
-  background-color: #ddd;
+.table-row-huntingtonbeach-badboys {
+  color: #FE4E00;
+  background-color: #002145;
   font-family: sans-serif;
   text-shadow: none;
 }
@@ -200,15 +200,6 @@ main {
   background-color: #067F38;
   padding: 20px;
   border: 1px solid #ddd;
-}
-
-.container-rookie-draft-order {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  background-color: #067F38;
-  padding: 1em;
-  font-size: 1em;
 }
 
 .container-draft-grade {
@@ -266,36 +257,25 @@ table#draft-grades td:nth-child(odd) {
 }
 
 .container-draft-trades {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
   background-color: #067F38;
+  color: #0039ac;
   padding: 20px;
   border: 1px solid #ddd;
+}
+
+#trades-container-2024, #trades-container-2025, #trades-container-2026 {
+  display: none;
 }
 
 #draft-trades {
   margin: 20px;
 }
 
-#toggle-trades {
-  background-color: #0039ac;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-#toggle-trades:hover {
-  background-color: #f0f0f0;
-}
-
 #trades-container {
   display: none; /* hide trades by default */
 }
 
-#trades-table {
+#trades-table-2024 {
   width: 100%;
   border-collapse: collapse;
   text-shadow: none;
@@ -305,6 +285,29 @@ table#draft-grades td:nth-child(odd) {
   text-align: center;
   background-color: #000000;
 }
+
+#trades-table-2025 {
+  width: 100%;
+  border-collapse: collapse;
+  text-shadow: none;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #000000;
+}
+
+#trades-table-2026 {
+  width: 100%;
+  border-collapse: collapse;
+  text-shadow: none;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #000000;
+}
+
 
 #trades-table th, #trades-table td {
   border: 1px solid #000000;
@@ -318,23 +321,6 @@ table#draft-grades td:nth-child(odd) {
 
 #trades-table tr:hover {
   background-color: #e0e0e0;
-}
-
-.container-rookie-draft-trades {
-  display: flex;
-  flex: 1;
-  background-color: #f7f7f7;
-  padding: 20px;
-  border: 1px solid #ddd;
-}
-
-.container-rookie-draft-grade {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  background-color: #067F38;
-  padding: 20px;
-  border: 1px solid #ddd;
 }
 
 h2 {

@@ -1,22 +1,25 @@
-const switchButtons = document.querySelectorAll('button');
-const draftResults = document.querySelector('#draft-results');
-const years = ['2024', '2025', '2026'];
-let currentYear = 0;
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('button[id^="switch-"]');
+  const tableBodies = document.querySelectorAll('tbody[id]');
+  const h2Element = document.querySelector('h2');
 
-switchButtons.forEach((button, i) => {
-  button.addEventListener('click', () => {
-    // Hide all tables
-    years.forEach(year => {
-      const tbody = document.querySelector(`#${year}`);
-      tbody.classList.add('hidden');
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const year = button.id.replace('switch-', '');
+      console.log(`Button clicked: ${year}`); // Add a log to check if the button is clicked
+      if (year) { // Add a check to make sure the year is not empty
+        tableBodies.forEach((tbody) => {
+          if (tbody.id !== year) {
+            tbody.style.display = 'none';
+          } else {
+            tbody.style.display = 'table-row-group';
+          }
+        });
+        const h2Text = `Rookie Draft Results for ${year}`;
+        h2Element.textContent = h2Text;
+      } else {
+        console.log('Error: Year is empty');
+      }
     });
-
-    // Show the selected table
-    const tbody = document.querySelector(`#${years[i]}`);
-    tbody.classList.remove('hidden');
-    currentYear = i;
   });
 });
-
-// Show the initial table
-draftResults.querySelector(`#${years[currentYear]}`).classList.remove('hidden');
