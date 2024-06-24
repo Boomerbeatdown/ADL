@@ -97,6 +97,28 @@ main {
   margin-top: 40px; /* Space around the divider */
 }
 
+.section-switcher {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-switcher button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.section-switcher button:hover {
+  background-color: #3e8e41;
+}
+
+#Draft-Information-2025 {
+  display: none;
+}
 .Draft-Information {
   display: flex;
   flex: 1;
@@ -326,6 +348,8 @@ table#draft-grades td:nth-child(odd) {
 h2 {
   margin-top: 0;
 }
+
+
 
 #footer {
   flex-basis: 50%; /* adjust the width of each container */

@@ -5,12 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Draft Information</title>
         <link rel="stylesheet" href="draftpage-styles.css">
+        <script src="draftinformationscript.js"></script>
     </head>
 <body>
-  <header>
-    <div class="header">Draft Information</div>
-  </header>
-      
   <div class="container">
         <div class="countdown">
             <h3><img src="./images/adl-logo-plain-2.png" alt="adl-logo">Time to the Draft<img src="../images/adl-logo-plain-2.png" alt="adl-logo"></h3>
@@ -21,1041 +18,184 @@
         </div>
         <script src="drafttimerscript.js"></script>
       </div>
+      <div class="section-divider"></div>
+      <header>
+        <div class="header">Draft Information</div>
+      </header>
+          
 
     <main>
       <div class="section-divider"></div>
 
-        <section id="Draft-Information">
-           <div class="container-row">
-            <div class="container-draft-budget">
-              <h2 id="draft-budget">Draft Budget</h2>
-              <button onclick="showYear(2024)">View 2024</button>
-              <button onclick="showYear(2025)">View 2025</button>
-              <button onclick="showYear(2026)">View 2026</button>
-              
-                <div id="2024" class="table-container">
-                  <table>
-                    <tr class="table-row-draft-budget-header">
-                      <th>Team</th>
-                      <th>Money Available</th>
-                      <th>Roster</th>
-                    </tr>
-                    <tr class="table-row-stockton-stormbringers">
-                      <td>Stockton Stormbringers</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-honolulu-huskies">
-                      <td>Honolulu Huskies</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-brooklyn-banditos">
-                      <td>Brooklyn Banditos</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-calgary-catfish">
-                      <td>Calgary Catfish</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-baycity-pandas">
-                      <td>Bay City Pandas</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-huntingtonbeach-badboys">
-                      <td>Huntington Beach Bad Boys</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-teamname3">
-                      <td>Team Name</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-teamname4">
-                      <td>Team Name</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                  </table>
-                </div>
-              
-                <div id="2025" class="table-container hidden">
-                  <table>
-                    <tr class="table-row-draft-budget-header">
-                      <th>Team</th>
-                      <th>Money Available</th>
-                      <th>Roster</th>
-                    </tr>
-                    <tr class="table-row-stockton-stormbringers">
-                      <td>Stockton Stormbringers</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-honolulu-huskies">
-                      <td>Honolulu Huskies</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-brooklyn-banditos">
-                      <td>Brooklyn Banditos</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-calgary-catfish">
-                      <td>Calgary Catfish</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-baycity-pandas">
-                      <td>Bay City Pandas</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-huntingtonbeach-badboys">
-                      <td>Huntington Beach Bad Boys</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-teamname3">
-                      <td>Team Name</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-teamname4">
-                      <td>Team Name</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                  </table>
-                </div>
-              
-                <div id="2026" class="table-container hidden">
-                  <table>
-                    <tr class="table-row-draft-budget-header">
-                      <th>Team</th>
-                      <th>Money Available</th>
-                      <th>Roster</th>
-                    </tr>
-                    <tr class="table-row-stockton-stormbringers">
-                      <td>Stockton Stormbringers</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-honolulu-huskies">
-                      <td>Honolulu Huskies</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-brooklyn-banditos">
-                      <td>Brooklyn Banditos</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-calgary-catfish">
-                      <td>Calgary Catfish</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-baycity-pandas">
-                      <td>Bay City Pandas</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-huntingtonbeach-badboys">
-                      <td>Huntington Beach Bad Boys</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-teamname3">
-                      <td>Team Name</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                    <tr class="table-row-teamname4">
-                      <td>Team Name</td>
-                      <td>?</td>
-                      <td>0/32</td>
-                    </tr>
-                  </table>
-                </div>
-            </div>
-            </div>
- <div class="section-divider"></div>
+      <div class="section-switcher">
+        <button id="2023-btn">2023</button>
+        <button id="2024-btn">2024</button>
+        <button id="2025-btn">2025</button>
+      </div>
 
-            <div class="container-rookie-draft-lottery">
-              <div id="draft-lottery">
-                <h2 id="draft-year">Rookie Draft Lottery & Final Order</h2>
-                <button onclick="showYear(2024)">View 2024</button>
-                <button onclick="showYear(2025)">View 2025</button>
-                <button onclick="showYear(2026)">View 2026</button>
-                <div id="2024" class="draft-table">
-                  <table>
-                    <tr class="table-row-draft-budget-header">
-                      <th>Pick #</th>
-                      <th>Team</th>
-                      <th>Chance at #1 Pick</th>
-                    </tr>
-                    <tr class="table-row-teamname1">
-                      <td>#1</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname1">
-                      <td>#2</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname1">
-                      <td>#3</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname1">
-                      <td>#4</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname1">
-                      <td>#5</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname2">
-                      <td>#6</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname3">
-                      <td>#7</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname4">
-                      <td>#8</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                  </table>
-                </div>
-              
-                <div id="2025" class="draft-table hidden">
-                  <table>
-                    <tr class="table-row-draft-budget-header">
-                      <th>Pick #</th>
-                      <th>Team</th>
-                      <th>Chance at #1 Pick</th>
-                    </tr>
-                    <tr class="table-row-teamname1">
-                      <td>#1</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname1">
-                      <td>#2</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname1">
-                      <td>#3</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname1">
-                      <td>#4</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname1">
-                      <td>#5</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname2">
-                      <td>#6</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname3">
-                      <td>#7</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname4">
-                      <td>#8</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                  </table>
-                </div>
-              
-                <div id="2026" class="draft-table hidden">
-                  <table>
-                    <tr class="table-row-draft-budget-header">
-                      <th>Pick #</th>
-                      <th>Team</th>
-                      <th>Chance at #1 Pick</th>
-                    </tr>
-                    <tr class="table-row-teamname1">
-                      <td>#1</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname1">
-                      <td>#2</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname1">
-                      <td>#3</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname1">
-                      <td>#4</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname1">
-                      <td>#5</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname2">
-                      <td>#6</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname3">
-                      <td>#7</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr class="table-row-teamname4">
-                      <td>#8</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <script src="draftrookielotteryhistory.js"></script>
-          </div>
-          <div class="section-divider"></div>
-
-<!-- Switching buttons -->
-<button id="switch-to-2024">2024</button>
-<button id="switch-to-2025">2025</button>
-<button id="switch-to-2026">2026</button>
-
-<div class="container-row" id="2024-container">
-  <div class="container-draft-trades">
-    <h2>Draft Trades 2024</h2>
-    <table id="trades-table-2024">
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Team</th>
-          <th>Player/Asset Received</th>
-          <th>Team </th>
-          <th>Player/Asset Received</th>
-        </tr>
-      </thead>
-      <tbody id="trades-body-2024">
-        <tr>
-          <td>**/**/2024</td>
-          <td>???</td>
-          <td>Pick/Player/Money</td>
-          <td>???</td>
-          <td>Pick/Player/Money</td>
-        </tr>
-        <tr>
-          <td>**/**/2024</td>
-          <td>???</td>
-          <td>Pick/Player/Money</td>
-          <td>???</td>
-          <td>Pick/Player/Money</td>
-        </tr>
-        <!-- add more trades here -->
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<!-- 2025 table -->
-<div class="container-row" id="2025-container" style="display: none;">
-  <div class="container-draft-trades">
-    <h2>Draft Trades 2025</h2>
-    <table id="trades-table-2025">
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Team</th>
-          <th>Player/Asset Received</th>
-          <th>Team </th>
-          <th>Player/Asset Received</th>
-        </tr>
-      </thead>
-      <tbody id="trades-body-2025">
-        <tr>
-          <td>**/**/2025</td>
-          <td>???</td>
-          <td>Pick/Player/Money</td>
-          <td>???</td>
-          <td>Pick/Player/Money</td>
-        </tr>
-        <tr>
-          <td>**/**/2025</td>
-          <td>???</td>
-          <td>Pick/Player/Money</td>
-          <td>???</td>
-          <td>Pick/Player/Money</td>
-        </tr>
-        <!-- add more trades here -->
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<!-- 2026 table -->
-<div class="container-row" id="2026-container" style="display: none;">
-  <div class="container-draft-trades">
-    <h2>Draft Trades 2026</h2>
-    <table id="trades-table-2026">
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Team</th>
-          <th>Player/Asset Received</th>
-          <th>Team </th>
-          <th>Player/Asset Received</th>
-        </tr>
-      </thead>
-      <tbody id="trades-body-2026">
-        <tr>
-          <td>**/**/2026</td>
-          <td>???</td>
-          <td>Pick/Player/Money</td>
-          <td>???</td>
-          <td>Pick/Player/Money</td>
-        </tr>
-        <tr>
-          <td>**/**/2026</td>
-          <td>???</td>
-          <td>Pick/Player/Money</td>
-          <td>???</td>
-          <td>Pick/Player/Money</td>
-        </tr>
-        <!-- add more trades here -->
-      </tbody>
-    </table>
-  </div>
-</div>
-
-          <div class="section-divider"></div>
-
-          <div class="container-rookie-draft-order">
-            <button id="switch-2024">Show 2024</button>
-            <button id="switch-2025">Show 2025</button>
-            <button id="switch-2026">Show 2026</button>
-            <h2>Rookie Draft Results</h2>
-<div id="draft-results">
-<table>
-  <thead>
-    <tr>
-      <th>Round</th>
-      <th>Stockton Stormbringers</th>
-      <th>Honolulu Huskies</th>
-      <th>Brooklyn Banditos</th>
-      <th>Calgary Catfish</th>
-      <th>Bay City Pandas</th>
-      <th>Huntington Beach Bad Boys</th>
-      <th>Team 7</th>
-      <th>Team 8</th>
-    </tr>
-  </thead>
-  <tbody id="2024">
-    <tr>
-      <td>1</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-  </tbody>
-  <tbody id="2025" class="hidden">
-    <tr>
-      <td>1</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-  </tbody>
-  <tbody id="2026" class="hidden">
-    <tr>
-      <td>1</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-        </div>
-
-        <div class="section-divider"></div>
-
+      <section id="Draft-Information-2024">
         <div class="container-row">
-          <div class="container-rookie-draft-grade">
-  <title>Rookie Draft Grades</title>
-</head>
-<body>
-  <select id="year-select">
-    <option value="2024">Rookie Draft Grades 2024</option>
-    <option value="2025" style="display:none;">Rookie Draft Grades 2025</option>
-    <option value="2026" style="display:none;">Rookie Draft Grades 2026</option>
-  </select>
-
-  <div id="2024">
-    <div>
-      <h2>Rookie Draft Grades 2024</h2>
-      <table id="draft-grades">
-        <thead>
-        <tr>
-          <th>Grade</th>
-          <th>Team Name</th>
-          <th>Best Pick/Worst Pick</th>
-        </tr>
-        </thead>
-        <tbody id="2024">
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Stockton Stormbringers</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Honolulu Huskies</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Brooklyn Banditos</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Calgary Catfish</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Bay City Pandas</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Huntington Beach Bad Boys</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Team Name</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Team Name</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div id="2025" style="display:none;">
-    <div>
-      <h2>Rookie Draft Grades 2025</h2>
-      <table id="draft-grades">
-        <thead>
-          <tr>
-            <th>Grade</th>
-            <th>Team Name</th>
-            <th>Best Pick/Worst Pick</th>
-          </tr>
-          </thead>
-          <tbody id="2025" class="hidden">
-        <tr>
-          <th>Grade</th>
-          <th>Team Name</th>
-          <th>Best Pick/Worst Pick</th>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Stockton Stormbringers</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Honolulu Huskies</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Brooklyn Banditos</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Calgary Catfish</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Bay City Pandas</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Huntington Beach Bad Boys</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Team Name</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Team Name</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div id="2026" style="display:none;">
-    <div>
-      <h2>Rookie Draft Grades 2026</h2>
-      <table id="draft-grades">
-        <thead>
-          <tr>
-            <th>Grade</th>
-            <th>Team Name</th>
-            <th>Best Pick/Worst Pick</th>
-          </tr>
-          </thead>
-          <tbody id="2026" class="hidden">
-        <tr>
-          <th>Grade</th>
-          <th>Team Name</th>
-          <th>Best Pick/Worst Pick</th>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Stockton Stormbringers</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Honolulu Huskies</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Brooklyn Banditos</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Calgary Catfish</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Bay City Pandas</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Huntington Beach Bad Boys</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Team Name</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-        <tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Team Name</td>
-          <td>Best:Round-Player</td>
-        </tr>
-        <tr>
-          <td>Worst:Round-Player</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-          <div class="container-row">
-            <div class="container-draft-result">
-              <h2>Draft Result</h2>
-              <table id="draft-results">
-                  <thead>
-                      <tr>
-                          <th>Round</th>
-                          <th>Stockton Stormbringers</th>
-                          <th>Honolulu Huskies</th>
-                          <th>Brooklyn Banditos</th>
-                          <th>Calgary Catfish</th>
-                          <th>Team 5</th>
-                          <th>Team 6</th>
-                          <th>Team 7</th>
-                          <th>Team 8</th>
-                      </tr>
-                  </thead>
-                  <tbody id="draft-results-body">
-                      <!-- JavaScript will populate this table body -->
-                  </tbody>
+          <div class="container-draft-budget">
+            <h2 id="draft-budget">2024 Draft Budget</h2>
+            <div id="2024" class="draft-table">
+              <table>
+                <tr class="table-row-draft-budget-header">
+                  <th>Team</th>
+                  <th>Money Available</th>
+                  <th>Roster</th>
+                </tr>
+                <tr class="table-row-stockton-stormbringers">
+                  <td>Stockton Stormbringers</td>
+                  <td>?</td>
+                  <td>0/32</td>
+                </tr>
+                <tr class="table-row-honolulu-huskies">
+                  <td>Honolulu Huskies</td>
+                  <td>?</td>
+                  <td>0/32</td>
+                </tr>
+                <tr class="table-row-brooklyn-banditos">
+                  <td>Brooklyn Banditos</td>
+                  <td>?</td>
+                  <td>0/32</td>
+                </tr>
+                <tr class="table-row-calgary-catfish">
+                  <td>Calgary Catfish</td>
+                  <td>?</td>
+                  <td>0/32</td>
+                </tr>
+                <tr class="table-row-baycity-pandas">
+                  <td>Bay City Pandas</td>
+                  <td>?</td>
+                  <td>0/32</td>
+                </tr>
+                <tr class="table-row-huntingtonbeach-badboys">
+                  <td>Huntington Beach Bad Boys</td>
+                  <td>?</td>
+                  <td>0/32</td>
+                </tr>
+                <tr class="table-row-teamname3">
+                  <td>Team Name</td>
+                  <td>?</td>
+                  <td>0/32</td>
+                </tr>
+                <tr class="table-row-teamname4">
+                  <td>Team Name</td>
+                  <td>?</td>
+                  <td>0/32</td>
+                </tr>
               </table>
-          
-              <script src="draftresult-script.js"></script>
+            </div>
+          </div>
+      
+          <div class="container-rookie-draft-lottery">
+            <div id="draft-lottery">
+              <h2 id="draft-year">2024 Rookie Draft Lottery & Final Order</h2>
+              <div id="2024" class="draft-table">
+                <table>
+                  <tr class="table-row-draft-budget-header">
+                    <th>Pick #</th>
+                    <th>Team</th>
+                    <th>Chance at #1 Pick</th>
+                  </tr>
+                  <tr class="table-row-teamname1">
+                    <td>#1</td>
+                    <td>???</td>
+                    <td>???</td>
+                  </tr>
+                  <tr class="table-row-teamname1">
+                    <td>#2</td>
+                    <td>???</td>
+                    <td>???</td>
+                  </tr>
+                  <tr class="table-row-teamname1">
+                    <td>#3</td>
+                    <td>???</td>
+                    <td>???</td>
+                  </tr>
+                  <tr class="table-row-teamname1">
+                    <td>#4</td>
+                    <td>???</td>
+                    <td>???</td>
+                  </tr>
+                  <tr class="table-row-teamname1">
+                    <td>#5</td>
+                    <td>???</td>
+                    <td>???</td>
+                  </tr>
+                  <tr class="table-row-teamname2">
+                    <td>#6</td>
+                    <td>???</td>
+                    <td>???</td>
+                  </tr>
+                  <tr class="table-row-teamname3">
+                    <td>#7</td>
+                    <td>???</td>
+                    <td>???</td>
+                  </tr>
+                  <tr class="table-row-teamname4">
+                    <td>#8</td>
+                    <td>???</td>
+                    <td>???</td>
+                  </tr>
+                </table>
+              </div>
             </div>
             <div class="section-divider"></div>
-            <div class="container-row">
-            <div class="container-rookie-draft-result">
-              <h2>Rookie Draft Result</h2>
-              <table id="draft-results">
+      
+            <div class="container-row" id="2024-container">
+              <div class="container-draft-trades">
+                <h2>2024 Draft Trades</h2>
+                <table id="trades-table-2024">
                   <thead>
-                      <tr>
-                          <th>Round</th>
-                          <th>Stockton Stormbringers</th>
-                          <th>Honolulu Huskies</th>
-                          <th>Brooklyn Banditos</th>
-                          <th>Calgary Catfish</th>
-                          <th>Team 5</th>
-                          <th>Team 6</th>
-                          <th>Team 7</th>
-                          <th>Team 8</th>
-                      </tr>
+                    <tr>
+                      <th>Date</th>
+                      <th>Team</th>
+                      <th>Player/Asset Received</th>
+                      <th>Team </th>
+                      <th>Player/Asset Received</th>
+                    </tr>
                   </thead>
-                  <tbody>
+                  <tbody id="trades-body-2024">
+                    <tr>
+                      <td>**/**/2024</td>
+                      <td>???</td>
+                      <td>Pick/Player/Money</td>
+                      <td>???</td>
+                      <td>Pick/Player/Money</td>
+                    </tr>
+                    <tr>
+                      <td>**/**/2024</td>
+                      <td>???</td>
+                      <td>Pick/Player/Money</td>
+                      <td>???</td>
+                      <td>Pick/Player/Money</td>
+                    </tr>
+                    <!-- add more trades here -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="section-divider"></div>
+      
+            <div class="container-rookie-draft-order">
+              <h2>2024 Rookie Draft Results</h2>
+              <div id="draft-results">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Round</th>
+                      <th>Stockton Stormbringers</th>
+                      <th>Honolulu Huskies</th>
+                      <th>Brooklyn Banditos</th>
+                      <th>Calgary Catfish</th>
+                      <th>Bay City Pandas</th>
+                      <th>Huntington Beach Bad Boys</th>
+                      <th>Team 7</th>
+                      <th>Team 8</th>
+                    </tr>
+                  </thead>
+                  <tbody id="2024">
                     <tr>
                       <td>1</td>
                       <td>?</td>
@@ -1145,259 +285,1346 @@
                       <td>?</td>
                     </tr>
                   </tbody>
-              </table>
-          
-              <script src="draftresult-script.js"></script>
-            </div>
-
-              <div class="section-divider"></div>
-            <div class="container-row">
-            <div class="container-draft-grade">
-              <h2>Draft Grade</h2>
-              <table id="draft-grades">
-                <tr>
-                  <th>Grade</th>
-                  <th>Team Name</th>
-                  <th>Best Pick/Worst Pick</th>
-                </tr>
-                <tr>
-                  <td rowspan="2">A+-F</td>
-                  <td rowspan="2">Stockton Stormbringers</td>
-                  <td>?-$?</td>
-                </tr>
-                <tr>
-                  <td>?-$?</td>
-                </tr>
-                <td rowspan="2">A+-F</td>
-                <td rowspan="2">Honolulu Huskies</td>
-                <td>?-$?</td>
-              </tr>
-              <tr>
-                <td>?-$?</td>
-              </tr>
-              <td rowspan="2">A+-F</td>
-              <td rowspan="2">Brooklyn Banditos</td>
-              <td>?-$?</td>
-            </tr>
-            <tr>
-              <td>?-$?</td>
-            </tr>
-            <td rowspan="2">A+-F</td>
-            <td rowspan="2">Calgary Catfish</td>
-            <td>?-$?</td>
-          </tr>
-          <tr>
-            <td>?-$?</td>
-          </tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Team Name</td>
-          <td>?-$?</td>
-        </tr>
-        <tr>
-          <td>?-$?</td>
-        </tr>
-        <td rowspan="2">A+-F</td>
-        <td rowspan="2">Team Name</td>
-        <td>?-$?</td>
-      </tr>
-      <tr>
-        <td>?-$?</td>
-      </tr>
-      <td rowspan="2">A+-F</td>
-      <td rowspan="2">Team Name</td>
-      <td>?-$?</td>
-    </tr>
-    <tr>
-      <td>?-$?</td>
-    </tr>
-    <td rowspan="2">A+-F</td>
-    <td rowspan="2">Team Name</td>
-    <td>?-$?</td>
-  </tr>
-  <tr>
-    <td>?-$?</td>
-  </tr>
-              </table>
-            </div>
-            <div class="section-divider"></div>
-
-        </section>
-        <div class="section-divider"></div>
-        <section id="Draft-Information">
-         
-          <div class="section-divider"></div>
-          <div class="container-row">
-            <div class="container-draft-result">
-              <div class="container-row">
-                <div class="container-draft-result-history">
-                  <h2>Draft Result History</h2>
-                  <select id="year-select">
-                    <option value="2024" selected>2024</option>
-                    <option value="2025">2025</option>
-                    <option value="2026">2026</option>
-                  </select>
-                  <div id="draft-results-2024">
-                    <table id="draft-results-2024">
-                      <thead>
-                        <tr>
-                          <th>Round</th>
-                          <th>Stockton Stormbringers</th>
-                          <th>Honolulu Huskies</th>
-                          <th>Brooklyn Banditos</th>
-                          <th>Calgary Catfish</th>
-                          <th>Team 5</th>
-                          <th>Team 6</th>
-                          <th>Team 7</th>
-                          <th>Team 8</th>
-                        </tr>
-                      </thead>
-                      <tbody id="draft-results-body-2024">
-                        <!-- JavaScript will populate this table body -->
-                      </tbody>
-                    </table>
-                  </div>
-                  <div id="draft-results-2025" style="display: none;">
-                    <table id="draft-results-2025">
-                      <thead>
-                        <tr>
-                          <th>Round</th>
-                          <th>Stockton Stormbringers</th>
-                          <th>Honolulu Huskies</th>
-                          <th>Brooklyn Banditos</th>
-                          <th>Calgary Catfish</th>
-                          <th>Team 5</th>
-                          <th>Team 6</th>
-                          <th>Team 7</th>
-                          <th>Team 8</th>
-                        </tr>
-                      </thead>
-                      <tbody id="draft-results-body-2025">
-                        <!-- JavaScript will populate this table body -->
-                      </tbody>
-                    </table>
-                  </div>
-                  <div id="draft-results-2026" style="display: none;">
-                    <table id="draft-results-2026">
-                      <thead>
-                        <tr>
-                          <th>Round</th>
-                          <th>Stockton Stormbringers</th>
-                          <th>Honolulu Huskies</th>
-                          <th>Brooklyn Banditos</th>
-                          <th>Calgary Catfish</th>
-                          <th>Team 5</th>
-                          <th>Team 6</th>
-                          <th>Team 7</th>
-                          <th>Team 8</th>
-                        </tr>
-                      </thead>
-                      <tbody id="draft-results-body-2026">
-                        <!-- JavaScript will populate this table body -->
-                      </tbody>
-                      <script src="draftresulthistory-script.js"></script>
-                    </table>
-                    
+                </table>
               </div>
-
+              <div class="section-divider"></div>
+      
+              <div class="container-rookie-draft-grade">
+                <h2>2024 Rookie Draft Grades</h2>
+                <table id="draft-grades">
+                  <thead>
+                    <tr>
+                      <th>Grade</th>
+                      <th>Team Name</th>
+                      <th>Best Pick/Worst Pick</th>
+                    </tr>
+                  </thead>
+                  <tbody id="2024">
+                    <tr>
+                      <td rowspan="2">A+-F</td>
+                      <td rowspan="2">Stockton Stormbringers</td>
+                      <td>Best:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td>Worst:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">A+-F</td>
+                      <td rowspan="2">Honolulu Huskies</td>
+                      <td>Best:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td>Worst:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">A+-F</td>
+                      <td rowspan="2">Brooklyn Banditos</td>
+                      <td>Best:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td>Worst:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">A+-F</td>
+                      <td rowspan="2">Calgary Catfish</td>
+                      <td>Best:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td>Worst:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">A+-F</td>
+                      <td rowspan="2">Bay City Pandas</td>
+                      <td>Best:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td>Worst:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">A+-F</td>
+                      <td rowspan="2">Huntington Beach Bad Boys</td>
+                      <td>Best:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td>Worst:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">A+-F</td>
+                      <td rowspan="2">Team Name</td>
+                      <td>Best:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td>Worst:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">A+-F</td>
+                      <td rowspan="2">Team Name</td>
+                      <td>Best:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td>Worst:Round-Player</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
             <div class="section-divider"></div>
-
-          <div class="section-divider"></div>
-          <div class="container-row">
-            <div class="container-draft-grade">
-              <h2>Draft Grade History</h2>
-              <button id="btn-2024">Show 2024</button>
-              <button id="btn-2025">Show 2025</button>
-              <button id="btn-2026">Show 2026</button>
-          
-              <table id="2024">
-                <tr>
-                  <th>Grade</th>
-                  <th>Team Name</th>
-                  <th>Best Pick/Worst Pick</th>
-                </tr>
-                <tr>
-                  <td rowspan="2">A+-F</td>
-                  <td rowspan="2">Stockton Stormbringers</td>
-                  <td>?-$?</td>
-                </tr>
-                <tr>
-                  <td>?-$?</td>
-                </tr>
-                <td rowspan="2">A+-F</td>
-                <td rowspan="2">Honolulu Huskies</td>
-                <td>?-$?</td>
-              </tr>
-              <tr>
-                <td>?-$?</td>
-              </tr>
-              <td rowspan="2">A+-F</td>
-              <td rowspan="2">Brooklyn Banditos</td>
-              <td>?-$?</td>
-            </tr>
-            <tr>
-              <td>?-$?</td>
-            </tr>
-            <td rowspan="2">A+-F</td>
-            <td rowspan="2">Calgary Catfish</td>
-            <td>?-$?</td>
-          </tr>
-          <tr>
-            <td>?-$?</td>
-          </tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Team Name</td>
-          <td>?-$?</td>
-          </tr>
-          <tr>
-            <td>?-$?</td>
-          </tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Team Name</td>
-          <td>?-$?</td>
-          </tr>
-          <tr>
-            <td>?-$?</td>
-          </tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Team Name</td>
-          <td>?-$?</td>
-          </tr>
-          <tr>
-            <td>?-$?</td>
-          </tr>
-          <td rowspan="2">A+-F</td>
-          <td rowspan="2">Team Name</td>
-          <td>?-$?</td>
-          </tr>
-          <tr>
-            <td>?-$?</td>
-          </tr>
-              </table>
-          
-              <table id="2025" style="display: none;">
-                <!-- Add your 2025 table data here -->
-              </table>
-          
-              <table id="2026" style="display: none;">
-                <!-- Add your 2026 table data here -->
-              </table>
-            </div>
-          </div>
-            <div class="section-divider"></div>
-            <div class="container-rookie-draft-result">
-              <h2>Rookie Draft Result History</h2>
-              <!-- content here -->
-            </div>
-          </div>
-          <div class="section-divider"></div>
-            <div class="container-rookie-draft-grade">
-              <h2>Rookie Draft Grade History</h2>
-              <!-- content here -->
+      
+            <div class="container-rookie-draft.order">
+              <h2>2024 Free Agent Draft Results</h2>
+              <div id="draft-results">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Round</th>
+                      <th>Stockton Stormbringers</th>
+                      <th>Honolulu Huskies</th>
+                      <th>Brooklyn Banditos</th>
+                      <th>Calgary Catfish</th>
+                      <th>Bay City Pandas</th>
+                      <th>Huntington Beach Bad Boys</th>
+                      <th>Team 7</th>
+                      <th>Team 8</th>
+                    </tr>
+                  </thead>
+                  <tbody id="2024">
+                    <tr>
+                      <td>1</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                      <td>?</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="section-divider"></div>
+      
+              <div class="container-rookie-draft-grade">
+                <h2>2024 Free Agent Draft Grades</h2>
+                <table id="draft-grades">
+                  <thead>
+                    <tr>
+                      <th>Grade</th>
+                      <th>Team Name</th>
+                      <th>Best Pick/Worst Pick</th>
+                    </tr>
+                  </thead>
+                  <tbody id="2024">
+                    <tr>
+                      <td rowspan="2">A+-F</td>
+                      <td rowspan="2">Stockton Stormbringers</td>
+                      <td>Best:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td>Worst:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">A+-F</td>
+                      <td rowspan="2">Honolulu Huskies</td>
+                      <td>Best:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td>Worst:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">A+-F</td>
+                      <td rowspan="2">Brooklyn Banditos</td>
+                      <td>Best:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td>Worst:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">A+-F</td>
+                      <td rowspan="2">Calgary Catfish</td>
+                      <td>Best:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td>Worst:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">A+-F</td>
+                      <td rowspan="2">Bay City Pandas</td>
+                      <td>Best:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td>Worst:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">A+-F</td>
+                      <td rowspan="2">Huntington Beach Bad Boys</td>
+                      <td>Best:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td>Worst:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">A+-F</td>
+                      <td rowspan="2">Team Name</td>
+                      <td>Best:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td>Worst:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">A+-F</td>
+                      <td rowspan="2">Team Name</td>
+                      <td>Best:Round-Player</td>
+                    </tr>
+                    <tr>
+                      <td>Worst:Round-Player</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </section>
-        <div class="section-divider"></div>
+            <div class="section-divider"></div>
+
+            <section id="Draft-Information-2025" style="display: none;">              <div class="container-row">
+                <div class="container-draft-budget">
+                  <h2 id="draft-budget">2025 Draft Budget</h2>
+                  <div id="2025" class="draft-table">
+                    <table>
+                      <tr class="table-row-draft-budget-header">
+                        <th>Team</th>
+                        <th>Money Available</th>
+                        <th>Roster</th>
+                      </tr>
+                      <tr class="table-row-stockton-stormbringers">
+                        <td>Stockton Stormbringers</td>
+                        <td>?</td>
+                        <td>0/32</td>
+                      </tr>
+                      <tr class="table-row-honolulu-huskies">
+                        <td>Honolulu Huskies</td>
+                        <td>?</td>
+                        <td>0/32</td>
+                      </tr>
+                      <tr class="table-row-brooklyn-banditos">
+                        <td>Brooklyn Banditos</td>
+                        <td>?</td>
+                        <td>0/32</td>
+                      </tr>
+                      <tr class="table-row-calgary-catfish">
+                        <td>Calgary Catfish</td>
+                        <td>?</td>
+                        <td>0/32</td>
+                      </tr>
+                      <tr class="table-row-baycity-pandas">
+                        <td>Bay City Pandas</td>
+                        <td>?</td>
+                        <td>0/32</td>
+                      </tr>
+                      <tr class="table-row-huntingtonbeach-badboys">
+                        <td>Huntington Beach Bad Boys</td>
+                        <td>?</td>
+                        <td>0/32</td>
+                      </tr>
+                      <tr class="table-row-teamname3">
+                        <td>Team Name</td>
+                        <td>?</td>
+                        <td>0/32</td>
+                      </tr>
+                      <tr class="table-row-teamname4">
+                        <td>Team Name</td>
+                        <td>?</td>
+                        <td>0/32</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="section-divider"></div>
+            
+                <div class="container-rookie-draft-lottery">
+                  <div id="draft-lottery">
+                    <h2 id="draft-year">2025 Rookie Draft Lottery & Final Order</h2>
+                    <div id="2025" class="draft-table">
+                      <table>
+                        <tr class="table-row-draft-budget-header">
+                          <th>Pick #</th>
+                          <th>Team</th>
+                          <th>Chance at #1 Pick</th>
+                        </tr>
+                        <tr class="table-row-teamname1">
+                          <td>#1</td>
+                          <td>???</td>
+                          <td>???</td>
+                        </tr>
+                        <tr class="table-row-teamname1">
+                          <td>#2</td>
+                          <td>???</td>
+                          <td>???</td>
+                        </tr>
+                        <tr class="table-row-teamname1">
+                          <td>#3</td>
+                          <td>???</td>
+                          <td>???</td>
+                        </tr>
+                        <tr class="table-row-teamname1">
+                          <td>#4</td>
+                          <td>???</td>
+                          <td>???</td>
+                        </tr>
+                        <tr class="table-row-teamname1">
+                          <td>#5</td>
+                          <td>???</td>
+                          <td>???</td>
+                        </tr>
+                        <tr class="table-row-teamname2">
+                          <td>#6</td>
+                          <td>???</td>
+                          <td>???</td>
+                        </tr>
+                        <tr class="table-row-teamname3">
+                          <td>#7</td>
+                          <td>???</td>
+                          <td>???</td>
+                        </tr>
+                        <tr class="table-row-teamname4">
+                          <td>#8</td>
+                          <td>???</td>
+                          <td>???</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="section-divider"></div>
+            
+                  <div class="container-row" id="2025-container">
+                    <div class="container-draft-trades">
+                      <h2>2025 Draft Trades</h2>
+                      <table id="trades-table-2025">
+                        <thead>
+                          <tr>
+                            <th>Date</th>
+                            <th>Team</th>
+                            <th>Player/Asset Received</th>
+                            <th>Team </th>
+                            <th>Player/Asset Received</th>
+                          </tr>
+                        </thead>
+                        <tbody id="trades-body-2025">
+                          <tr>
+                            <td>**/**/2025</td>
+                            <td>???</td>
+                            <td>Pick/Player/Money</td>
+                            <td>???</td>
+                            <td>Pick/Player/Money</td>
+                          </tr>
+                          <tr>
+                            <td>**/**/2025</td>
+                            <td>???</td>
+                            <td>Pick/Player/Money</td>
+                            <td>???</td>
+                            <td>Pick/Player/Money</td>
+                          </tr>
+                          <!-- add more trades here -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="section-divider"></div>
+            
+                  <div class="container-rookie-draft-order">
+                    <h2>2025 Rookie Draft Results</h2>
+                    <div id="draft-results">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Round</th>
+                            <th>Stockton Stormbringers</th>
+                            <th>Honolulu Huskies</th>
+                            <th>Brooklyn Banditos</th>
+                            <th>Calgary Catfish</th>
+                            <th>Bay City Pandas</th>
+                            <th>Huntington Beach Bad Boys</th>
+                            <th>Team 7</th>
+                            <th>Team 8</th>
+                          </tr>
+                        </thead>
+                        <tbody id="2025">
+                          <tr>
+                            <td>1</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="section-divider"></div>
+            
+                    <div class="container-rookie-draft-grade">
+                      <h2>2025 Rookie Draft Grades</h2>
+                      <table id="draft-grades">
+                        <thead>
+                          <tr>
+                            <th>Grade</th>
+                            <th>Team Name</th>
+                            <th>Best Pick/Worst Pick</th>
+                          </tr>
+                        </thead>
+                        <tbody id="2025">
+                          <tr>
+                            <td rowspan="2">A+-F</td>
+                            <td rowspan="2">Stockton Stormbringers</td>
+                            <td>Best:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td>Worst:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">A+-F</td>
+                            <td rowspan="2">Honolulu Huskies</td>
+                            <td>Best:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td>Worst:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">A+-F</td>
+                            <td rowspan="2">Brooklyn Banditos</td>
+                            <td>Best:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td>Worst:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">A+-F</td>
+                            <td rowspan="2">Calgary Catfish</td>
+                            <td>Best:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td>Worst:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">A+-F</td>
+                            <td rowspan="2">Bay City Pandas</td>
+                            <td>Best:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td>Worst:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">A+-F</td>
+                            <td rowspan="2">Huntington Beach Bad Boys</td>
+                            <td>Best:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td>Worst:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">A+-F</td>
+                            <td rowspan="2">Team Name</td>
+                            <td>Best:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td>Worst:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">A+-F</td>
+                            <td rowspan="2">Team Name</td>
+                            <td>Best:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td>Worst:Round-Player</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="section-divider"></div>
+            
+                  <div class="container-rookie-draft.order">
+                    <h2>2025 Free Agent Draft Results</h2>
+                    <div id="draft-results">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Round</th>
+                            <th>Stockton Stormbringers</th>
+                            <th>Honolulu Huskies</th>
+                            <th>Brooklyn Banditos</th>
+                            <th>Calgary Catfish</th>
+                            <th>Bay City Pandas</th>
+                            <th>Huntington Beach Bad Boys</th>
+                            <th>Team 7</th>
+                            <th>Team 8</th>
+                          </tr>
+                        </thead>
+                        <tbody id="2025">
+                          <tr>
+                            <td>1</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="section-divider"></div>
+            
+                    <div class="container-rookie-draft-grade">
+                      <h2>2025 Free Agent Draft Grades</h2>
+                      <table id="draft-grades">
+                        <thead>
+                          <tr>
+                            <th>Grade</th>
+                            <th>Team Name</th>
+                            <th>Best Pick/Worst Pick</th>
+                          </tr>
+                        </thead>
+                        <tbody id="2025">
+                          <tr>
+                            <td rowspan="2">A+-F</td>
+                            <td rowspan="2">Stockton Stormbringers</td>
+                            <td>Best:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td>Worst:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">A+-F</td>
+                            <td rowspan="2">Honolulu Huskies</td>
+                            <td>Best:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td>Worst:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">A+-F</td>
+                            <td rowspan="2">Brooklyn Banditos</td>
+                            <td>Best:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td>Worst:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">A+-F</td>
+                            <td rowspan="2">Calgary Catfish</td>
+                            <td>Best:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td>Worst:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">A+-F</td>
+                            <td rowspan="2">Bay City Pandas</td>
+                            <td>Best:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td>Worst:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">A+-F</td>
+                            <td rowspan="2">Huntington Beach Bad Boys</td>
+                            <td>Best:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td>Worst:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">A+-F</td>
+                            <td rowspan="2">Team Name</td>
+                            <td>Best:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td>Worst:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="2">A+-F</td>
+                            <td rowspan="2">Team Name</td>
+                            <td>Best:Round-Player</td>
+                          </tr>
+                          <tr>
+                            <td>Worst:Round-Player</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </section>
+                  <div class="section-divider"></div>
+
+                  <section id="Draft-Information-2023" style="display: none;">                    <div class="container-row">
+                      <div class="container-draft-budget">
+                        <h2 id="draft-budget">2023 Draft Budget</h2>
+                        <div id="2023" class="draft-table">
+                          <table>
+                            <tr class="table-row-draft-budget-header">
+                              <th>Team</th>
+                              <th>Money Available</th>
+                              <th>Roster</th>
+                            </tr>
+                            <tr class="table-row-stockton-stormbringers">
+                              <td>Stockton Stormbringers</td>
+                              <td>?</td>
+                              <td>0/32</td>
+                            </tr>
+                            <tr class="table-row-honolulu-huskies">
+                              <td>Honolulu Huskies</td>
+                              <td>?</td>
+                              <td>0/32</td>
+                            </tr>
+                            <tr class="table-row-brooklyn-banditos">
+                              <td>Brooklyn Banditos</td>
+                              <td>?</td>
+                              <td>0/32</td>
+                            </tr>
+                            <tr class="table-row-calgary-catfish">
+                              <td>Calgary Catfish</td>
+                              <td>?</td>
+                              <td>0/32</td>
+                            </tr>
+                            <tr class="table-row-baycity-pandas">
+                              <td>Bay City Pandas</td>
+                              <td>?</td>
+                              <td>0/32</td>
+                            </tr>
+                            <tr class="table-row-huntingtonbeach-badboys">
+                              <td>Huntington Beach Bad Boys</td>
+                              <td>?</td>
+                              <td>0/32</td>
+                            </tr>
+                            <tr class="table-row-teamname3">
+                              <td>Team Name</td>
+                              <td>?</td>
+                              <td>0/32</td>
+                            </tr>
+                            <tr class="table-row-teamname4">
+                              <td>Team Name</td>
+                              <td>?</td>
+                              <td>0/32</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="section-divider"></div>
+                  
+                      <div class="container-rookie-draft-lottery">
+                        <div id="draft-lottery">
+                          <h2 id="draft-year">2023 Rookie Draft Lottery & Final Order</h2>
+                          <div id="2023" class="draft-table">
+                            <table>
+                              <tr class="table-row-draft-budget-header">
+                                <th>Pick #</th>
+                                <th>Team</th>
+                                <th>Chance at #1 Pick</th>
+                              </tr>
+                              <tr class="table-row-teamname1">
+                                <td>#1</td>
+                                <td>???</td>
+                                <td>???</td>
+                              </tr>
+                              <tr class="table-row-teamname1">
+                                <td>#2</td>
+                                <td>???</td>
+                                <td>???</td>
+                              </tr>
+                              <tr class="table-row-teamname1">
+                                <td>#3</td>
+                                <td>???</td>
+                                <td>???</td>
+                              </tr>
+                              <tr class="table-row-teamname1">
+                                <td>#4</td>
+                                <td>???</td>
+                                <td>???</td>
+                              </tr>
+                              <tr class="table-row-teamname1">
+                                <td>#5</td>
+                                <td>???</td>
+                                <td>???</td>
+                              </tr>
+                              <tr class="table-row-teamname2">
+                                <td>#6</td>
+                                <td>???</td>
+                                <td>???</td>
+                              </tr>
+                              <tr class="table-row-teamname3">
+                                <td>#7</td>
+                                <td>???</td>
+                                <td>???</td>
+                              </tr>
+                              <tr class="table-row-teamname4">
+                                <td>#8</td>
+                                <td>???</td>
+                                <td>???</td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="section-divider"></div>
+                  
+                        <div class="container-row" id="2023-container">
+                          <div class="container-draft-trades">
+                            <h2>2023 Draft Trades</h2>
+                            <table id="trades-table-2023">
+                              <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  <th>Team</th>
+                                  <th>Player/Asset Received</th>
+                                  <th>Team </th>
+                                  <th>Player/Asset Received</th>
+                                </tr>
+                              </thead>
+                              <tbody id="trades-body-2023">
+                                <tr>
+                                  <td>**/**/2023</td>
+                                  <td>???</td>
+                                  <td>Pick/Player/Money</td>
+                                  <td>???</td>
+                                  <td>Pick/Player/Money</td>
+                                </tr>
+                                <tr>
+                                  <td>**/**/2023</td>
+                                  <td>???</td>
+                                  <td>Pick/Player/Money</td>
+                                  <td>???</td>
+                                  <td>Pick/Player/Money</td>
+                                </tr>
+                                <!-- add more trades here -->
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="section-divider"></div>
+                  
+                        <div class="container-rookie-draft-order">
+                          <h2>2023 Rookie Draft Results</h2>
+                          <div id="draft-results">
+                            <table>
+                              <thead>
+                                <tr>
+                                  <th>Round</th>
+                                  <th>Stockton Stormbringers</th>
+                                  <th>Honolulu Huskies</th>
+                                  <th>Brooklyn Banditos</th>
+                                  <th>Calgary Catfish</th>
+                                  <th>Bay City Pandas</th>
+                                  <th>Huntington Beach Bad Boys</th>
+                                  <th>Team 7</th>
+                                  <th>Team 8</th>
+                                </tr>
+                              </thead>
+                              <tbody id="2023">
+                                <tr>
+                                  <td>1</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                </tr>
+                                <tr>
+                                  <td>4</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                </tr>
+                                <tr>
+                                  <td>5</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                </tr>
+                                <tr>
+                                  <td>6</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                </tr>
+                                <tr>
+                                  <td>7</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                </tr>
+                                <tr>
+                                  <td>8</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="section-divider"></div>
+                  
+                          <div class="container-rookie-draft-grade">
+                            <h2>2023 Rookie Draft Grades</h2>
+                            <table id="draft-grades">
+                              <thead>
+                                <tr>
+                                  <th>Grade</th>
+                                  <th>Team Name</th>
+                                  <th>Best Pick/Worst Pick</th>
+                                </tr>
+                              </thead>
+                              <tbody id="2023">
+                                <tr>
+                                  <td rowspan="2">A+-F</td>
+                                  <td rowspan="2">Stockton Stormbringers</td>
+                                  <td>Best:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td>Worst:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td rowspan="2">A+-F</td>
+                                  <td rowspan="2">Honolulu Huskies</td>
+                                  <td>Best:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td>Worst:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td rowspan="2">A+-F</td>
+                                  <td rowspan="2">Brooklyn Banditos</td>
+                                  <td>Best:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td>Worst:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td rowspan="2">A+-F</td>
+                                  <td rowspan="2">Calgary Catfish</td>
+                                  <td>Best:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td>Worst:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td rowspan="2">A+-F</td>
+                                  <td rowspan="2">Bay City Pandas</td>
+                                  <td>Best:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td>Worst:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td rowspan="2">A+-F</td>
+                                  <td rowspan="2">Huntington Beach Bad Boys</td>
+                                  <td>Best:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td>Worst:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td rowspan="2">A+-F</td>
+                                  <td rowspan="2">Team Name</td>
+                                  <td>Best:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td>Worst:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td rowspan="2">A+-F</td>
+                                  <td rowspan="2">Team Name</td>
+                                  <td>Best:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td>Worst:Round-Player</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="section-divider"></div>
+                  
+                        <div class="container-rookie-draft.order">
+                          <h2>2023 Free Agent Draft Results</h2>
+                          <div id="draft-results">
+                            <table>
+                              <thead>
+                                <tr>
+                                  <th>Round</th>
+                                  <th>Stockton Stormbringers</th>
+                                  <th>Honolulu Huskies</th>
+                                  <th>Brooklyn Banditos</th>
+                                  <th>Calgary Catfish</th>
+                                  <th>Bay City Pandas</th>
+                                  <th>Huntington Beach Bad Boys</th>
+                                  <th>Team 7</th>
+                                  <th>Team 8</th>
+                                </tr>
+                              </thead>
+                              <tbody id="2023">
+                                <tr>
+                                  <td>1</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                </tr>
+                                <tr>
+                                  <td>4</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                </tr>
+                                <tr>
+                                  <td>5</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                </tr>
+                                <tr>
+                                  <td>6</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                </tr>
+                                <tr>
+                                  <td>7</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                </tr>
+                                <tr>
+                                  <td>8</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                  <td>?</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="section-divider"></div>
+                  
+                          <div class="container-rookie-draft-grade">
+                            <h2>2023 Free Agent Draft Grades</h2>
+                            <table id="draft-grades">
+                              <thead>
+                                <tr>
+                                  <th>Grade</th>
+                                  <th>Team Name</th>
+                                  <th>Best Pick/Worst Pick</th>
+                                </tr>
+                              </thead>
+                              <tbody id="2023">
+                                <tr>
+                                  <td rowspan="2">A+-F</td>
+                                  <td rowspan="2">Stockton Stormbringers</td>
+                                  <td>Best:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td>Worst:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td rowspan="2">A+-F</td>
+                                  <td rowspan="2">Honolulu Huskies</td>
+                                  <td>Best:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td>Worst:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td rowspan="2">A+-F</td>
+                                  <td rowspan="2">Brooklyn Banditos</td>
+                                  <td>Best:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td>Worst:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td rowspan="2">A+-F</td>
+                                  <td rowspan="2">Calgary Catfish</td>
+                                  <td>Best:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td>Worst:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td rowspan="2">A+-F</td>
+                                  <td rowspan="2">Bay City Pandas</td>
+                                  <td>Best:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td>Worst:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td rowspan="2">A+-F</td>
+                                  <td rowspan="2">Huntington Beach Bad Boys</td>
+                                  <td>Best:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td>Worst:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td rowspan="2">A+-F</td>
+                                  <td rowspan="2">Team Name</td>
+                                  <td>Best:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td>Worst:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td rowspan="2">A+-F</td>
+                                  <td rowspan="2">Team Name</td>
+                                  <td>Best:Round-Player</td>
+                                </tr>
+                                <tr>
+                                  <td>Worst:Round-Player</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
         <div id="footer">
           <div class="list-container">
           <h1><u>Site Map</u></h1>
