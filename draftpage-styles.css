@@ -285,7 +285,7 @@ table#draft-grades td:nth-child(odd) {
   border: 1px solid #ddd;
 }
 
-#trades-container-2024, #trades-container-2025, #trades-container-2026 {
+#trades-container-2024, #trades-container-2025, #trades-container-2023 {
   display: none;
 }
 
@@ -319,7 +319,7 @@ table#draft-grades td:nth-child(odd) {
   background-color: #000000;
 }
 
-#trades-table-2026 {
+#trades-table-2023 {
   width: 100%;
   border-collapse: collapse;
   text-shadow: none;
@@ -477,4 +477,37 @@ th {
 
 .nav-buttons button {
   margin-right: 10px;
+}
+
+.jump-link {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.jump-link:hover {
+  background-color: #444;
+}
+
+.large-button {
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  padding: 20px 15px;
+  margin-top: 20px; /* add some margin to separate from smaller buttons */
+}
+
+.small-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.small-buttons a {
+  margin: 10px; /* add some margin between smaller buttons */
 }
