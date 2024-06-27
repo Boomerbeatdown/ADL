@@ -1,0 +1,64 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+header img {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+section {
+	background-color: #f7f7f7;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	margin-top: 0;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: left;
+}
+
+th {
+	background-color: #333;
+	color: #fff;
+}
+
+td {
+	background-color: #f7f7f7;
+}
+
+#active-roster, #practice-squad, #auction-draft-history, #rookie-draft-history, #faab-history, #team-captains, #trade-block, #trade-auction, #waivers {
+	margin-bottom: 20px;
+}
+
+#owner-info, #team-history, #contract-info, #team-records, #team-awards, #news-and-updates, #rivalry {
+	margin-bottom: 40px;
+}

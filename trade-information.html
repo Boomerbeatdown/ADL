@@ -4,12 +4,171 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trade Information</title>
-        <link rel="stylesheet" href="comingsoonstyles.css">
+        <link rel="stylesheet" href="tradeinformationstyles.css">
     </head>
-<body>
-    <img src="images/adl-logo-plain-2.png" alt="adl-logo">
-    <h1>Trade Information</h1>
-    <h2>Coming Soon</h2>
-    <button class="styled-button"><a href="index.html">Back to Home Page</a></button>
-</body>
-</html>
+    <body>
+        <header>
+            <h1>Trade Details</h1>
+        </header>
+        <main>
+            <section id="trade-details">
+                <h2>Trade Details</h2>
+                <ul>
+                    <li>
+                        <label for="team-a">Team A:</label>
+                        <input type="text" id="team-a" placeholder="Team A">
+                    </li>
+                    <li>
+                        <label for="team-b">Team B:</label>
+                        <input type="text" id="team-b" placeholder="Team B">
+                    </li>
+                    <li>
+                        <label for="players">Players:</label>
+                        <textarea id="players" placeholder="List of players being traded"></textarea>
+                    </li>
+                    <li>
+                        <label for="trade-status">Trade Status:</label>
+                        <select id="trade-status">
+                            <option value="">Select Status</option>
+                            <option value="Pending">Pending</option>
+                            <option value="Accepted">Accepted</option>
+                            <option value="Rejected">Rejected</option>
+                            <option value="Cancelled">Cancelled</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="proposed-date">Proposed Date:</label>
+                        <input type="datetime-local" id="proposed-date">
+                    </li>
+                    <li>
+                        <label for="accepted-date">Accepted Date:</label>
+                        <input type="datetime-local" id="accepted-date">
+                    </li>
+                </ul>
+            </section>
+            <section id="trade-review-period">
+                <h2>Trade Review Period</h2>
+                <p>48-hour trade review period after a trade is accepted, allowing team managers to review the trade before it is finalized.</p>
+            </section>
+            <section id="trade-analyzer">
+                <h2>Trade Analyzer</h2>
+                <p>Which team is "winning" the trade and by how much:</p>
+                <ul>
+                    <li>
+                        <label for="winning-team">Winning Team:</label>
+                        <input type="text" id="winning-team" placeholder="Winning Team">
+                    </li>
+                    <li>
+                        <label for="winning-margin">Winning Margin:</label>
+                        <input type="number" id="winning-margin" placeholder="Winning Margin">
+                    </li>
+                </ul>
+                <p>Rest-of-season (ROS) value of each player involved in the trade:</p>
+                <ul>
+                    <li>
+                        <label for="player-1-ros">Player 1 ROS:</label>
+                        <input type="number" id="player-1-ros" placeholder="Player 1 ROS">
+                    </li>
+                    <li>
+                        <label for="player-2-ros">Player 2 ROS:</label>
+                        <input type="number" id="player-2-ros" placeholder="Player 2 ROS">
+                    </li>
+                </ul>
+            </section>
+            <section id="trade-veto">
+                <h2>Trade Veto</h2>
+                <p>Rules for vetoing trades:</p>
+                <textarea id="veto-rules" placeholder="Rules for vetoing trades"></textarea>
+                <p>Process for appealing a vetoed trade:</p>
+                <textarea id="appeal-process" placeholder="Process for appealing a vetoed trade"></textarea>
+            </section>
+            <section id="trade-history">
+                <h2>Trade History</h2>
+                <ul id="trade-history-list">
+                    <!-- Trade history list will be populated dynamically using JavaScript -->
+                </ul>
+            </section>
+            <section id="trade-rules">
+                <h2>Trade Rules</h2>
+                <p>Types of trades allowed:</p>
+                <textarea id="trade-types" placeholder="Types of trades allowed"></textarea>
+                <p>Deadline for making trades:</p>
+                <input type="datetime-local" id="trade-deadline">
+                <p>Restrictions on trading:</p>
+                <textarea id="trade-restrictions" placeholder="Restrictions on trading"></textarea>
+            </section>
+            <section id="trade-block">
+                <h2>Trade Block</h2>
+                <ul id="trade-block-list">
+                    <!-- Trade block list will be populated dynamically using JavaScript -->
+                </ul>
+           </section>
+            <section id="trade-auction">
+                <h2>Trade Auction</h2>
+                <p>Minimum bid or reserve price for players:</p>
+                <input type="number" id="min-bid" placeholder="Minimum bid">
+                <p>Bids on players:</p>
+                <ul id="bids-list">
+                    <!-- Bids list will be populated dynamically using JavaScript -->
+                </ul>
+            </section>
+            <section id="trade-proposals">
+                <h2>Trade Proposals</h2>
+                <ul id="trade-proposals-list">
+                    <!-- Trade proposals list will be populated dynamically using JavaScript -->
+                </ul>
+            </section>
+            <section id="trade-negotiations">
+                <h2>Trade Negotiations</h2>
+                <p>Counteroffers and discussion:</p>
+                <textarea id="negotiations" placeholder="Counteroffers and discussion"></textarea>
+            </section>
+            <section id="trade-approval">
+                <h2>Trade Approval</h2>
+                <p>Approve or reject trade:</p>
+                <button id="approve-trade">Approve Trade</button>
+                <button id="reject-trade">Reject Trade</button>
+            </section>
+            <section id="trade-cancellation">
+                <h2>Trade Cancellation</h2>
+                <p>Cancel trade:</p>
+                <button id="cancel-trade">Cancel Trade</button>
+            </section>
+            <section id="trade-confirmation">
+                <h2>Trade Confirmation</h2>
+                <p>Confirm trade:</p>
+                <button id="confirm-trade">Confirm Trade</button>
+            </section>
+            <section id="trade-notifications">
+                <h2>Trade Notifications</h2>
+                <p>Notifications about trades:</p>
+                <ul id="notifications-list">
+                    <!-- Notifications list will be populated dynamically using JavaScript -->
+                </ul>
+            </section>
+            <section id="trade-feedback">
+                <h2>Trade Feedback</h2>
+                <p>Leave feedback on trade:</p>
+                <textarea id="feedback" placeholder="Leave feedback on trade"></textarea>
+            </section>
+            <section id="trade-rankings">
+                <h2>Trade Rankings</h2>
+                <p>Rankings of different trades:</p>
+                <ul id="rankings-list">
+                    <!-- Rankings list will be populated dynamically using JavaScript -->
+                </ul>
+            </section>
+            <section id="trade-simulator">
+                <h2>Trade Simulator</h2>
+                <p>Simulate trades:</p>
+                <button id="simulate-trade">Simulate Trade</button>
+            </section>
+            <section id="trade-chat">
+                <h2>Trade Chat</h2>
+                <p>Chat with other team managers about trades:</p>
+                <textarea id="chat" placeholder="Chat with other team managers about trades"></textarea>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+    </html>

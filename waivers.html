@@ -4,12 +4,154 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Waiver Information</title>
-        <link rel="stylesheet" href="comingsoonstyles.css">
+        <link rel="stylesheet" href="waiverstyles.css">
     </head>
-<body>
-    <img src="images/adl-logo-plain-2.png" alt="adl-logo">
-    <h1>Waiver Information</h1>
-    <h2>Coming Soon</h2>
-    <button class="styled-button"><a href="index.html">Back to Home Page</a></button>
-</body>
-</html>
+    <body>
+        <header>
+            <h1>Waivers</h1>
+        </header>
+        <main>
+            <section id="faab">
+                <h2>FAAB</h2>
+                <p>Each team has a FAAB budget of $100 to use for the entire season.</p>
+                <p>The FAAB budget is used to bid on free agents and waiver wire players.</p>
+                <p>The team with the highest bid on a player will be awarded that player.</p>
+                <button id="faab-button">View FAAB Budget</button>
+                <div id="faab-budget" style="display: none;">
+                    <p>Your current FAAB budget: $100</p>
+                    <input type="number" id="faab-bid" placeholder="Enter bid amount">
+                    <button id="faab-bid-button">Place Bid</button>
+                </div>
+            </section>
+            <section id="waiver-priority">
+                <h2>Waiver Priority</h2>
+                <p>The team owner with the highest FAAB bid on a player will receive the player when waivers clear.</p>
+                <p>If multiple teams bid the same amount, the team with the better waiver priority (closest to "1") will receive the player.</p>
+            </section>
+            <section id="free-agents">
+                <h2>Free Agents</h2>
+                <p>All available players not on waivers are considered free agents.</p>
+                <p>Players dropped by an owner reside on waivers for at least 48 hours before clearing waivers.</p>
+                <p>At the clearance time, the player is assigned to either a team (if a bid was made) or the free-agent pool (if no bid was made).</p>
+                <button id="free-agents-button">View Free Agents</button>
+                <div id="free-agents-list" style="display: none;">
+                    <ul>
+                        <li>Player 1</li>
+                        <li>Player 2</li>
+                        <li>Player 3</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="waiver-period">
+                <h2>Waiver Period</h2>
+                <p>The waiver period can be set by the league manager to 1, 2, 3, or 4 days.</p>
+                <p>If a player is dropped during the week, the player will be listed on waivers for the set length of total days set in your league rules.</p>
+                <p>Waivers process on the designated day (e.g., Wednesdays, Thursdays, Fridays, or Saturdays).</p>
+            </section>
+            <section id="faab-bidding">
+                <h2>FAAB Bidding</h2>
+                <p>Teams can bid on players using their FAAB budget.</p>
+                <p>The minimum bid is $1, and bids must be in whole dollar increments.</p>
+                <p>Teams can bid up to their remaining FAAB budget.</p>
+            </section>
+            <section id="waiver-claims">
+                <h2>Waiver Claims</h2>
+                <p>If multiple teams bid on a player, the claim is resolved based on the FAAB bid amount.</p>
+                <p>The team with the highest bid will be awarded the player.</p>
+            </section>
+            <section id="cycling-players">
+                <h2>Cycling Players</h2>
+                <p>Intentional cycling of players through waivers is a serious offense and may result in a team being banned in Fantasy Football.</p>
+                <p>A player that is added and released within 24 hours will remain a free agent to prevent cycling.</p>
+            </section>
+            <section id="league-settings">
+                <h2>League Settings</h2>
+                <p>The league manager can change the waiver settings at any time during the season.</p>
+                <p>To learn more about the waivers process for your league, review your League Settings on the League Office page.</p>
+            </section>
+            <section id="standard-league-waivers">
+                <h2>Standard League Waivers</h2>
+                <p>All players not on a fantasy roster reside on waivers following each week of play, remaining there from Tuesday morning until waivers begin to clear at 3 a.m. ET on Thursday.</p>
+                <p>Released players reside on waivers for at least 48 hours before clearing waivers.</p>
+                <p>Unclaimed players not acquired during the waiver period become free agents and may be picked up on a first-come, first-serve basis without affecting a team's FAAB budget.</p>
+            </section>
+            <section id="waiver-rules">
+                <h2>Waiver Rules</h2>
+                <p>Weekly Waivers: Players are on waivers for a set period of time (e.g., 2 days) before clearing waivers.</p>
+                <p>Continuous Waivers: Players are on waivers until they are claimed or cleared.</p>
+                <p>No Waivers: Players are not on waivers and can be picked up immediately.</p>
+            </section>
+            <section id="faab-budget-management">
+                <h2>FAAB Budget Management</h2>
+                <p>View your remaining FAAB budget and adjust your bidding strategy accordingly.</p>
+                <p>Make informed decisions about which players to target and how much to bid.</p>
+            </section>
+            <section id="waiver-history">
+                <h2>Waiver History</h2>
+                <p>View a history of your waiver claims, including successful and unsuccessful bids.</p>
+                <p>Track your waiver activity and adjust your strategy accordingly.</p>
+                <button id="waiver-history-button">View Waiver History</button>
+                <div id="waiver-history-list" style="display: none;">
+                    <ul>
+                        <li>Player 1 - Bid: $10 - Status: Claimed</li>
+                        <li>Player 2 - Bid: $5 - Status: Unsuccessful</li>
+                        <li>Player 3 - Bid: $20 - Status: Claimed</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="waiver-settings">
+                <h2>Waiver Settings</h2>
+                <p>Adjust waiver settings, including the waiver period, waiver rule, and FAAB budget.</p>
+                <p>Customize your league's waiver settings to fit your needs.</p>
+                <button id="waiver-settings-button">Edit Waiver Settings</button>
+                <div id="waiver-settings-form" style="display: none;">
+                    <form>
+                        <label for="waiver-period">Waiver Period:</label>
+                        <select id="waiver-period">
+                            <option value="1">1 day</option>
+                            <option value="2">2 days</option>
+                            <option value="3">3 days</option>
+                            <option value="4">4 days</option>
+                        </select>
+                        <br>
+                        <label for="waiver-rule">Waiver Rule:</label>
+                        <select id="waiver-rule">
+                            <option value="weekly">Weekly Waivers</option>
+                            <option value="continuous">Continuous Waivers</option>
+                            <option value="no-waivers">No Waivers</option>
+                        </select>
+                        <br>
+                        <label for="faab-budget">FAAB Budget:</label>
+                        <input type="number" id="faab-budget" value="100">
+                        <br>
+                        <button type="submit">Save Changes</button>
+                    </form>
+                </div>
+            </section>
+            <section id="player-status">
+                <h2>Player Status</h2>
+                <p>View the status of playerson waivers, including the number of days remaining on waivers and the number of bids on a player.</p>
+                <p>Make informed decisions about which players to target and how much to bid.</p>
+                <button id="player-status-button">View Player Status</button>
+                <div id="player-status-list" style="display: none;">
+                    <ul>
+                        <li>Player 1 - Days Remaining: 2 - Bids: 3</li>
+                        <li>Player 2 - Days Remaining: 1 - Bids: 2</li>
+                        <li>Player 3 - Days Remaining: 3 - Bids: 1</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="waiver-alerts">
+                <h2>Waiver Alerts</h2>
+                <p>Receive alerts or notifications when a waiver claim is successful or unsuccessful.</p>
+                <p>Stay up-to-date on your waiver activity and adjust your strategy accordingly.</p>
+            </section>
+            <section id="waiver-tips-and-strategies">
+                <h2>Waiver Tips and Strategies</h2>
+                <p>Learn how to manage your FAAB budget effectively and increase your chances of acquiring a desired player.</p>
+                <p>Get tips on how to use FAAB bidding to your advantage and stay ahead of the competition.</p>
+            </section>
+        </main>
+        <script src="waiver-script.js"></script>
+    </body>
+    </html>
