@@ -1,22 +1,15 @@
-// Add event listeners to the buttons
-document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll("button");
-    buttons.forEach(function(button) {
-        button.addEventListener("click", function() {
-            // Add functionality to the buttons here
-        });
-    });
+// script.js
+
+document.getElementById('nominate-button').addEventListener('click', function() {
+    // Add code to handle nomination form submission
 });
 
-// Add functionality to the card grid
-document.addEventListener("DOMContentLoaded", function() {
-    const cardGrids = document.querySelectorAll(".card-grid");
-    cardGrids.forEach(function(cardGrid) {
-        const cards = cardGrid.children;
-        for (let i = 0; i < cards.length; i++) {
-            cards[i].addEventListener("click", function() {
-                // Add functionality to the cards here
-            });
-        }
-    });
+document.getElementById('search-button').addEventListener('click', function() {
+    // Add code to filter and search inductees
+});
+
+document.getElementById('search-input').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        document.getElementById('search-button').click();
+    }
 });
