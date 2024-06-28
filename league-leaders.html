@@ -4,12 +4,277 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>League Leaders</title>
-        <link rel="stylesheet" href="comingsoonstyles.css">
+        <link rel="stylesheet" href="leagueleaders-styles.css">
     </head>
-<body>
-    <img src="images/adl-logo-plain-2.png" alt="adl-logo">
-    <h1>League Leaders</h1>
-    <h2>Coming Soon</h2>
-    <button class="styled-button"><a href="index.html">Back to Home Page</a></button>
+    <body>
+        <header>
+            <h1>Fantasy Football League Leaders</h1>
+        </header>
+        <main>
+            <section id="top-scorers">
+                <h2>Top Scorers</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Team</th>
+                            <th>Fantasy Points</th>
+                        </tr>
+                    </thead>
+                    <tbody id="top-scorers-tbody">
+                        <!-- data will be inserted here -->
+                    </tbody>
+                </table>
+            </section>
+    
+            <section id="passing-leaders">
+                <h2>Passing Leaders (QB)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Team</th>
+                            <th>Passing Yards</th>
+                            <th>Passing TDs</th>
+                            <th>Fantasy Points</th>
+                        </tr>
+                    </thead>
+                    <tbody id="passing-leaders-tbody">
+                        <!-- data will be inserted here -->
+                    </tbody>
+                </table>
+            </section>
+    
+            <section id="rushing-leaders">
+                <h2>Rushing Leaders (RB)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Team</th>
+                            <th>Rushing Yards</th>
+                            <th>Rushing TDs</th>
+                            <th>Fantasy Points</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rushing-leaders-tbody">
+                        <!-- data will be inserted here -->
+                    </tbody>
+                </table>
+            </section>
+    
+            <section id="receiving-leaders">
+                <h2>Receiving Leaders (WR/TE)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Team</th>
+                            <th>Receptions</th>
+                            <th>Receiving Yards</th>
+                            <th>Receiving TDs</th>
+                            <th>Fantasy Points</th>
+                        </tr>
+                    </thead>
+                    <tbody id="receiving-leaders-tbody">
+                        <!-- data will be inserted here -->
+                    </tbody>
+                </table>
+            </section>
+    
+            <section id="kicking-leaders">
+                <h2>Kicking Leaders (K)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Team</th>
+                            <th>Field Goals Made</th>
+                            <th>Extra Points Made</th>
+                            <th>Fantasy Points</th>
+                        </tr>
+                    </thead>
+                    <tbody id="kicking-leaders-tbody">
+                        <!-- data will be inserted here -->
+                    </tbody>
+                </table>
+            </section>
+    
+            <section id="punting-leaders">
+                <h2>Punting Leaders (P)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Team</th>
+                            <th>Punts</th>
+                            <th>Punting Yards</th>
+                            <th>Fantasy Points</th>
+                        </tr>
+                    </thead>
+                    <tbody id="punting-leaders-tbody">
+                        <!-- data will be inserted here -->
+                    </tbody>
+                </table>
+            </section>
+    
+            <section id="defensive-line-leaders">
+                <h2>Defensive Line Leaders (DL)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Team</th>
+                            <th>Tackles</th>
+                            <th>Sacks</th>
+                            <th>Fantasy Points</th>
+                        </tr>
+                    </thead>
+                    <tbody id="defensive-line-leaders-tbody">
+                        <!-- data will be inserted here -->
+                    </tbody>
+                </table>
+            </section>
+    
+            <section id="linebacker-leaders">
+                <h2>Linebacker Leaders (LB)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Team</th>
+                            <th>Tackles</th>
+                            <th>Sacks</th>
+                            <th>Fantasy Points</th>
+                        </tr>
+                    </thead>
+                    <tbody id="linebacker-leaders-tbody">
+                        <!-- data will be inserted here -->
+                    </tbody>
+                </table>
+            </section>
+    
+            <section id="defensive-back-leaders">
+                <h2>Defensive Back Leaders (DB)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Team</th>
+                            <th>Tackles</th>
+                            <th>INTs</th>
+                            <th>Fantasy Points</th>
+                        </tr>
+                    </thead>
+                    <tbody id="defensive-back-leaders-tbody">
+                        <!-- data will be inserted here -->
+                    </tbody>
+                </table>
+            </section>
+    
+            <header>
+              <h1>Fantasy Football Team Statistics</h1>
+          </header>
+              <section id="team-stats">
+                  <h2>Team Statistics</h2>
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>Team</th>
+                              <th>Wins</th>
+                              <th>Losses</th>
+                              <th>Ties</th>
+                              <th>Points For</th>
+                              <th>Points Against</th>
+                          </tr>
+                      </thead>
+                      <tbody id="team-stats-tbody">
+                          <!-- data will be inserted here -->
+                      </tbody>
+                  </table>
+              </section>
+      
+              <section id="offense-stats">
+                  <h2>Offense Statistics</h2>
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>Team</th>
+                              <th>Passing Yards</th>
+                              <th>Rushing Yards</th>
+                              <th>Total Yards</th>
+                              <th>Touchdowns</th>
+                          </tr>
+                      </thead>
+                      <tbody id="offense-stats-tbody">
+                          <!-- data will be inserted here -->
+                      </tbody>
+                  </table>
+              </section>
+      
+              <section id="defense-stats">
+                  <h2>Defense Statistics</h2>
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>Team</th>
+                              <th>Points Allowed</th>
+                              <th>Yards Allowed</th>
+                              <th>Sacks</th>
+                              <th>Interceptions</th>
+                          </tr>
+                      </thead>
+                      <tbody id="defense-stats-tbody">
+                          <!-- data will be inserted here -->
+                      </tbody>
+                  </table>
+              </section>
+    
+        </main>
+        <script src="script.js"></script>
+    <div id="footer">
+        <div class="list-container">
+        <h1><u>Site Map</u></h1>
+        <ul>
+          <li><a href="awards.html">Awards</a></li>
+          <li><a href="draft-page.html">Draft Information</a></li>
+          <li><a href="hall-of-fame.html">Hall of Fame</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="league-information.html">League Information</a></li>
+          <li><a href="league-leaders.html">League Leaders</a></li>
+          <li><a href="league-officials.html">League Officials</a></li>
+          <li><a href="league-rules.html">League Rules</a></li>
+          <li><a href="record-book.html">Record Book</a></li>
+          <li><a href="rivalry.html">Rivalry Information</a></li>
+          <li><a href="team-pages.html">Team Pages</a></li>
+          <li><a href="trade-information.html">Trade Information</a></li>
+          <li><a href="waivers.html">Waiver Information</a></li>
+          <li><a href="yearly-review.html">Yearly Review</a></li>
+          <!-- Add more links to your pages here -->
+        </ul>
+      </div>
+        <div class="list-container">
+        <h1><u>Team Quick Links</u></h1>
+        <ul>
+          <li><a href="dalton-teampage.html">Dalton - Stockton Stormbringers</a></li>
+          <li><a href="dillon-teampage.html">Dillon - Honolulu Huskies</a></li>
+          <li><a href="jade-teampage.html">Jade - Team Name</a></li>
+          <li><a href="jarad-teampage.html">Jarad - Team Name</a></li>
+          <li><a href="joel-teampage.html">Joel - Calgary Catfish</a></li>
+          <li><a href="keegan-teampage.html">Keegan - Brooklyn Banditos</a></li>
+          <li><a href="mario-teampage.html">Mario - Team Name</a></li>
+          <li><a href="will-teampage.html">Will - Team Name</a></li>
+          <!-- Add more links to your pages here -->
+        </ul>
+      </div>
 </body>
 </html>

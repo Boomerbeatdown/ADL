@@ -59,3 +59,85 @@ button {
 button:hover {
     background-color: #3e8e41;
 }
+
+@font-face {
+    font-family: 'Rye-Regular';
+    src: url('./fonts/Rye-Regular.ttf') format('truetype');
+    /* Add additional src lines for different font formats if needed */
+}
+
+body {
+    background: #067F38;
+    color: #0039ac;
+    font-family: 'Rye-Regular', sans-serif;
+    text-shadow: #FAB117 1px 0 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    font-size: 4em;
+    padding: 0.5em;
+}
+
+.h1-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  text-align: center;      /* Center text inside the container */
+  font-size: 1.25em;
+}
+
+img {
+  max-width: 4em;
+  max-height: 4em;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.section-divider {
+  width: 100%;
+  height: .25em; /* Thickness of the divider */
+  background: #333333; /* Solid color */
+  background-image: linear-gradient(to right, #000000, #333333, #000000); /* Gradient effect */
+  margin-top: 40px; /* Space around the divider */
+}
+
+#footer {
+  flex-basis: 50%; /* adjust the width of each container */
+  margin: 1em;
+  padding: 1em;
+}
+
+.list-container {
+  display: inline-flex;
+  flex-direction: column;
+  margin: .5em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.list-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-container li {
+  margin-bottom: 10px;
+}
+
+.list-container a:hover {
+    text-decoration: underline;
+  }

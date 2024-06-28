@@ -4,12 +4,250 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Record Book</title>
-        <link rel="stylesheet" href="comingsoonstyles.css">
+        <link rel="stylesheet" href="recordbook-styles.css">
     </head>
-<body>
-    <img src="images/adl-logo-plain-2.png" alt="adl-logo">
-    <h1>Record Book</h1>
-    <h2>Coming Soon</h2>
-    <button class="styled-button"><a href="index.html">Back to Home Page</a></button>
+    <!DOCTYPE html>
+    <htm lang="en">
+    <body>
+        <header>
+            <h1>Fantasy Football League Record Book</h1>
+        </header>
+        <main>
+            <section id="owner-section">
+                <h2>Owner Section</h2>
+                <table id="owner-table">
+                    <thead>
+                        <tr>
+                            <th>Owner Name</th>
+                            <th>Team Name</th>
+                        </tr>
+                    </thead>
+                    <tbody id="owner-table-body">
+                        <!-- owner data will be inserted here -->
+                    </tbody>
+                </table>
+            </section>
+            <section id="team-section">
+                <h2>Team Section</h2>
+                <table id="team-table">
+                    <thead>
+                        <tr>
+                            <th>Team Name</th>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Ties</th>
+                        </tr>
+                    </thead>
+                    <tbody id="team-table-body">
+                        <!-- team data will be inserted here -->
+                    </tbody>
+                </table>
+            </section>
+            <section id="player-section">
+                <h2>Player Section</h2>
+                <ul id="player-tabs">
+                    <li><a href="#qb-tab">Quarterbacks (QB)</a></li>
+                    <li><a href="#rb-tab">Running Backs (RB)</a></li>
+                    <li><a href="#wr-tab">Wide Receivers (WR)</a></li>
+                    <li><a href="#te-tab">Tight Ends (TE)</a></li>
+                    <li><a href="#k-tab">Kickers (K)</a></li>
+                    <li><a href="#p-tab">Punters (P)</a></li>
+                    <li><a href="#dl-tab">Defensive Linemen (DL)</a></li>
+                    <li><a href="#lb-tab">Linebackers (LB)</a></li>
+                    <li><a href="#db-tab">Defensive Backs (DB)</a></li>
+                </ul>
+                <div id="player-content">
+                    <div id="qb-tab">
+                        <h3>Quarterbacks (QB)</h3>
+                        <table id="qb-table">
+                            <thead>
+                                <tr>
+                                    <th>Player Name</th>
+                                    <th>Team</th>
+                                    <th>Career Stats</th>
+                                    <th>Season Stats</th>
+                                    <th>Game Stats</th>
+                                </tr>
+                            </thead>
+                            <tbody id="qb-table-body">
+                                <!-- qb data will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="rb-tab">
+                        <h3>Running Backs (RB)</h3>
+                        <table id="rb-table">
+                            <thead>
+                                <tr>
+                                    <th>Player Name</th>
+                                    <th>Team</th>
+                                    <th>Career Stats</th>
+                                    <th>Season Stats</th>
+                                    <th>Game Stats</th>
+                                </tr>
+                            </thead>
+                            <tbody id="rb-table-body">
+                                <!-- rb data will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="wr-tab">
+                        <h3>Wide Receivers (WR)</h3>
+                        <table id="wr-table">
+                            <thead>
+                                <tr>
+                                    <th>Player Name</th>
+                                    <th>Team</th>
+                                    <th>Career Stats</th>
+                                    <th>Season Stats</th>
+                                    <th>Game Stats</th>
+                                </tr>
+                            </thead>
+                            <tbody id="wr-table-body">
+                                <!-- wr data will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="te-tab">
+                        <h3>Tight Ends (TE)</h3>
+                        <table id="te-table">
+                            <thead>
+                                <tr>
+                                    <th>Player Name</th>
+                                    <th>Team</th>
+                                    <th>Career Stats</th>
+                                    <th>Season Stats</th>
+                                    <th>Game Stats</th>
+                                </tr>
+                            </thead>
+                            <tbody id="te-table-body">
+                                <!-- te data will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+    <div id="k-tab">
+                        <h3>Kickers (K)</h3>
+                        <table id="k-table">
+                            <thead>
+                                <tr>
+                                    <th>Player Name</th>
+                                    <th>Team</th>
+                                    <th>Career Stats</th>
+                                    <th>Season Stats</th>
+                                    <th>Game Stats</th>
+                                </tr>
+                            </thead>
+                            <tbody id="k-table-body">
+                                <!-- k data will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="p-tab">
+                        <h3>Punters (P)</h3>
+                        <table id="p-table">
+                            <thead>
+                                <tr>
+                                    <th>Player Name</th>
+                                    <th>Team</th>
+                                    <th>Career Stats</th>
+                                    <th>Season Stats</th>
+                                    <th>Game Stats</th>
+                                </tr>
+                            </thead>
+                            <tbody id="p-table-body">
+                                <!-- p data will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="dl-tab">
+                        <h3>Defensive Linemen (DL)</h3>
+                        <table id="dl-table">
+                            <thead>
+                                <tr>
+                                    <th>Player Name</th>
+                                    <th>Team</th>
+                                    <th>Career Stats</th>
+                                    <th>Season Stats</th>
+                                    <th>Game Stats</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dl-table-body">
+                                <!-- dl data will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="lb-tab">
+                        <h3>Linebackers (LB)</h3>
+                        <table id="lb-table">
+                            <thead>
+                                <tr>
+                                    <th>Player Name</th>
+                                    <th>Team</th>
+                                    <th>Career Stats</th>
+                                    <th>Season Stats</th>
+                                    <th>Game Stats</th>
+                                </tr>
+                            </thead>
+                            <tbody id="lb-table-body">
+                                <!-- lb data will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="db-tab">
+                        <h3>Defensive Backs (DB)</h3>
+                        <table id="db-table">
+                            <thead>
+                                <tr>
+                                    <th>Player Name</th>
+                                    <th>Team</th>
+                                    <th>Career Stats</th>
+                                    <th>Season Stats</th>
+                                    <th>Game Stats</th>
+                                </tr>
+                            </thead>
+                            <tbody id="db-table-body">
+                                <!-- db data will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="recordbook-script.js"></script>
+    <div id="footer">
+        <div class="list-container">
+        <h1><u>Site Map</u></h1>
+        <ul>
+          <li><a href="awards.html">Awards</a></li>
+          <li><a href="draft-page.html">Draft Information</a></li>
+          <li><a href="hall-of-fame.html">Hall of Fame</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="league-information.html">League Information</a></li>
+          <li><a href="league-leaders.html">League Leaders</a></li>
+          <li><a href="league-officials.html">League Officials</a></li>
+          <li><a href="league-rules.html">League Rules</a></li>
+          <li><a href="record-book.html">Record Book</a></li>
+          <li><a href="rivalry.html">Rivalry Information</a></li>
+          <li><a href="team-pages.html">Team Pages</a></li>
+          <li><a href="trade-information.html">Trade Information</a></li>
+          <li><a href="waivers.html">Waiver Information</a></li>
+          <li><a href="yearly-review.html">Yearly Review</a></li>
+          <!-- Add more links to your pages here -->
+        </ul>
+      </div>
+        <div class="list-container">
+        <h1><u>Team Quick Links</u></h1>
+        <ul>
+          <li><a href="dalton-teampage.html">Dalton - Stockton Stormbringers</a></li>
+          <li><a href="dillon-teampage.html">Dillon - Honolulu Huskies</a></li>
+          <li><a href="jade-teampage.html">Jade - Team Name</a></li>
+          <li><a href="jarad-teampage.html">Jarad - Team Name</a></li>
+          <li><a href="joel-teampage.html">Joel - Calgary Catfish</a></li>
+          <li><a href="keegan-teampage.html">Keegan - Brooklyn Banditos</a></li>
+          <li><a href="mario-teampage.html">Mario - Team Name</a></li>
+          <li><a href="will-teampage.html">Will - Team Name</a></li>
+          <!-- Add more links to your pages here -->
+        </ul>
+      </div>
 </body>
 </html>

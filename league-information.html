@@ -4,12 +4,110 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>League Information</title>
-        <link rel="stylesheet" href="comingsoonstyles.css">
+        <link rel="stylesheet" href="league-informationstyles.css">
     </head>
-<body>
-    <img src="images/adl-logo-plain-2.png" alt="adl-logo">
-    <h1>League Information</h1>
-    <h2>Coming Soon</h2>
-    <button class="styled-button"><a href="index.html">Back to Home Page</a></button>
-</body>
-</html>
+    <body>
+        <header>
+            <h1>League Information Page</h1>
+        </header>
+        <main>
+            <section id="projections">
+                <h2>Projections</h2>
+                <p>Expert projections and player profiles to help users expect from each player that week.</p>
+            </section>
+            <section id="ranks">
+                <h2>Ranks</h2>
+                <p>A list of all experts' rankings of the players on a user's roster in one place, showing where each player stands at their position that week.</p>
+            </section>
+            <section id="team-settings">
+                <h2>Team Settings</h2>
+                <form>
+                    <label for="team-name">Team Name:</label>
+                    <input type="text" id="team-name" name="team-name"><br><br>
+                    <label for="team-logo">Team Logo:</label>
+                    <input type="file" id="team-logo" name="team-logo"><br><br>
+                    <input type="submit" value="Save Changes">
+                </form>
+            </section>
+            <section id="home">
+                <h2>Home</h2>
+                <div id="lm-note">
+                    <h3>LM Note</h3>
+                    <p>A section for the league manager to keep users updated on important league information.</p>
+                </div>
+                <div id="recent-activity">
+                    <h3>Recent League Activity</h3>
+                    <ul id="activity-list">
+                        <!-- JavaScript will populate this list -->
+                    </ul>
+                </div>
+                <div id="league-chat">
+                    <h3>League Chat</h3>
+                    <textarea id="chat-input" placeholder="Type a message..."></textarea>
+                    <button id="send-chat">Send</button>
+                    <ul id="chat-log">
+                        <!-- JavaScript will populate this list -->
+                    </ul>
+                </div>
+                <div id="league-manager-polls">
+                    <h3>League Manager Polls</h3>
+                    <p>A section for voting on fun topics, such as who has the worst or best team.</p>
+                </div>
+                <div id="league-standings">
+                    <h3>League Standings</h3>
+                    <table id="standings-table">
+                        <!-- JavaScript will populate this table -->
+                    </table>
+                </div>
+            </section>
+            <section id="league-settings">
+                <h2>League Settings</h2>
+                <ul>
+                    <li><strong>Scoring Rules:</strong> The specific scoring system used in the league, including any variations.</li>
+                    <li><strong>Roster Settings:</strong> The number of starters and bench slots on each team's roster.</li>
+                    <li><strong>Draft Type:</strong> The type of draft used in the league, such as a snake draft or auction draft.</li>
+                    <li><strong>Player Acquisition Method:</strong> The method used to acquire players, such as waivers or free agency.</li>
+                    <li><strong>Trading Restrictions:</strong> Any rules or restrictions on trading players between teams.</li>
+                    <li><strong>League Size:</strong> The number of teams in the league, which can range from 4 to 18 teams or more.</li>
+                    <li><strong>League ID:</strong> A unique numeric identifier for the league, used to identify it among all ESPN Fantasy leagues.</li>
+                </ul>
+            </section>
+        </main>
+        <script src="league-informationscript.js"></script>
+        <div id="footer">
+            <div class="list-container">
+            <h1><u>Site Map</u></h1>
+            <ul>
+              <li><a href="awards.html">Awards</a></li>
+              <li><a href="draft-page.html">Draft Information</a></li>
+              <li><a href="hall-of-fame.html">Hall of Fame</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="league-information.html">League Information</a></li>
+              <li><a href="league-leaders.html">League Leaders</a></li>
+              <li><a href="league-officials.html">League Officials</a></li>
+              <li><a href="league-rules.html">League Rules</a></li>
+              <li><a href="record-book.html">Record Book</a></li>
+              <li><a href="rivalry.html">Rivalry Information</a></li>
+              <li><a href="team-pages.html">Team Pages</a></li>
+              <li><a href="trade-information.html">Trade Information</a></li>
+              <li><a href="waivers.html">Waiver Information</a></li>
+              <li><a href="yearly-review.html">Yearly Review</a></li>
+              <!-- Add more links to your pages here -->
+            </ul>
+          </div>
+            <div class="list-container">
+            <h1><u>Team Quick Links</u></h1>
+            <ul>
+              <li><a href="dalton-teampage.html">Dalton - Stockton Stormbringers</a></li>
+              <li><a href="dillon-teampage.html">Dillon - Honolulu Huskies</a></li>
+              <li><a href="jade-teampage.html">Jade - Team Name</a></li>
+              <li><a href="jarad-teampage.html">Jarad - Team Name</a></li>
+              <li><a href="joel-teampage.html">Joel - Calgary Catfish</a></li>
+              <li><a href="keegan-teampage.html">Keegan - Brooklyn Banditos</a></li>
+              <li><a href="mario-teampage.html">Mario - Team Name</a></li>
+              <li><a href="will-teampage.html">Will - Team Name</a></li>
+              <!-- Add more links to your pages here -->
+            </ul>
+          </div>
+    </body>
+    </html>
