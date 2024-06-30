@@ -42,12 +42,176 @@ img {
 
 main {
     display: flex;
-    justify-content: space-between;
+    flex: 1;
+    justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
     
+}
+
+.container-row {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+
+/* Add some margin and padding to the top-leaders section */
+#top-leaders {
+  margin: 2rem 0;
+  padding: 0 1rem;
+  text-shadow: none;
+}
+
+/* Style the table */
+#top-offensive-scorers table,
+#top-defensive-scorers table {
+  border-collapse: collapse;
+  width: 42vw;
+}
+
+/* Style the table cells */
+#top-offensive-scorers th,
+#top-defensive-scorers th {
+  background-color: #dddddd;
+  border: 1px solid #067F38;
+  padding: 12px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#top-offensive-scorers td,
+#top-defensive-scorers td {
+  border: 1px solid #067F38;
+  padding: 12px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#top-offensive-scorers tr:nth-child(even),
+#top-defensive-scorers tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#top-defensive-scorers tr:nth-child(odd),
+#top-offensive-scorers tr:nth-child(odd) {
+  background-color: #000000;
+}
+
+/* Style the player column */
+#top-offensive-scorers th:nth-child(2),
+#top-defensive-scorers th:nth-child(2) {
+  width: 30%;
+}
+
+/* Style the team column */
+#top-offensive-scorers th:nth-child(3),
+#top-defensive-scorers th:nth-child(3) {
+  width: 30%;
+}
+
+/* Style the fantasy points column */
+#top-offensive-scorers th:nth-child(4),
+#top-defensive-scorers th:nth-child(4) {
+  width: 30%;
+}
+
+/* Style the h2 elements */
+#top-offensive-scorers h2,
+#top-defensive-scorers h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+/* Add some margin and padding to the top-leaders section */
+#offensive-leaders {
+  margin: 2rem 0;
+  padding: 0 1rem;
+  text-shadow: none;
+}
+
+/* Style the table */
+#passing-leaders table,
+#rushing-leaders table,
+#receiving-leaders table {
+  border-collapse: collapse;
+  width: 80vw;
+  font-family: 'Rye-Regular', sans-serif;
+
+}
+
+/* Style the table cells */
+#passing-leaders,
+#rushing-leaders,
+#receiving-leaders {
+  border: 1px solid #067F38;
+  padding: 12px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#passing-leaders td,
+#rushing-leaders td,
+#receiving-leaders td {
+  border: 1px solid #067F38;
+  padding: 12px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#passing-leaders tr:nth-child(even),
+#rushing-leaders tr:nth-child(even),
+#receiving-leaders tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#passing-leaders tr:nth-child(odd),
+#rushing-leaders tr:nth-child(odd),
+#receiving-leaders tr:nth-child(odd) {
+  background-color: #000000;
+}
+
+/* Style the player column */
+#passing-leaders th:nth-child(2),
+#rushing-leaders th:nth-child(2),
+#receiving-leaders th:nth-child(2) {
+  width: 30%;
+}
+
+/* Style the team column */
+#passing-leaders th:nth-child(3),
+#rushing-leaders th:nth-child(3),
+#receiving-leaders th:nth-child(3) {
+  width: 30%;
+}
+
+/* Style the fantasy points column */
+#passing-leaders th:nth-child(4),
+#rushing-leaders th:nth-child(4),
+#receiving-leaders th:nth-child(4) {
+  width: 30%;
+}
+
+/* Style the h2 elements */
+#passing-leaders h2,
+#rushing-leaders h2,
+#receiving-leaders h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000000;
+  font-family: 'Rye-Regular', sans-serif;
+
 }
 
 .section-divider {
@@ -85,62 +249,3 @@ main {
 .list-container a:hover {
     text-decoration: underline;
   }
-
-section {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-    background-color: #f7f7f7;
-    padding: 20px;
-    margin: 20px;
-    width: 40vw; 
-}
-
-.table-caption {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  caption-side: top;
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-section h2 {
-    margin-top: 0;
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #333;
-    color: #fff;
-}
-
-th, td, tr {
-    vertical-align: top;
-}
-
-/* added styles for team stats section */
-#team-stats-main {
-    margin-top: 40px;
-}
-
-#team-stats-main header {
-    background-color: #444;
-}
-
-#team-stats-main section {
-    width: 100%;
-    margin: 20px 0;
-}
