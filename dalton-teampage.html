@@ -8,23 +8,72 @@
 </head>
 <body>
 	<header>
-		<h1>[Insert Team Name] <img src="[Insert Team Logo]" alt="[Insert Team Name] Logo"></h1>
+		<h1>Stockton Stormbringers<img src="[Insert Team Logo]" alt="[Insert Team Name] Logo"></h1>
 	</header>
 	<main>
 		<section id="owner-info">
 			<h2>Team Owner's Information</h2>
-			<p>Owner: [Insert Owner's Name]</p>
-			<p>Email: [Insert Email]</p>
-			<p>Phone: [Insert Phone Number]</p>
+			<p>Owner: Dalton</p>
+			<p>Years Owned: 1</p>
+			<p>Contact: GroupMe Dalton</p>
 		</section>
-		<section id="team-history">
-			<h2>Team History</h2>
-			<p>The [Insert Team Name] were founded in [Insert Year] and have a rich history of success, including:</p>
-			<ul>
-				<li>[Insert Number] championships won</li>
-				<li>[Insert Number] division titles won</li>
-				<li>[Insert Number] league MVPs and other individual awards</li>
-			</ul>
+		<section id="news-and-updates">
+			<h2>News and Updates</h2>
+			<p>Recent transactions (trades, signings, etc.): [Insert Recent Transactions]</p>
+			<p>Injury reports: [Insert Injury Reports]</p>
+		</section>
+		<section id="trade-block">
+			<h2>Trade Block</h2>
+			<table id="trade-block">
+				<thead>
+					<tr>
+						<th>Player Name</th>
+						<th>Position</th>
+						<th>Contract Information</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>[Insert Player 1]</td>
+						<td>[Insert Position]</td>
+						<td>[Insert Contract Years Remaining, Salary, etc.]</td>
+					</tr>
+					<tr>
+						<td>[Insert Player 2]</td>
+						<td>[Insert Position]</td>
+						<td>[Insert Contract Years Remaining, Salary, etc.]</td>
+					</tr>
+					<!-- Add more players here -->
+				</tbody>
+			</table>
+		</section>
+		<section id="trade-auction">
+			<h2>Trade Auction</h2>
+			<table id="trade-auction">
+				<thead>
+					<tr>
+						<th>Player Name</th>
+						<th>Position</th>
+						<th>Current Bid</th>
+						<th>Auction End Date</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>[Insert Player 1]</td>
+						<td>[Insert Position]</td>
+						<td>[Insert Current Bid]</td>
+						<td>[Insert Auction End Date]</td>
+					</tr>
+					<tr>
+						<td>[Insert Player 2]</td>
+						<td>[Insert Position]</td>
+						<td>[Insert Current Bid]</td>
+						<td>[Insert Auction End Date]</td>
+					</tr>
+					<!-- Add more players here -->
+				</tbody>
+			</table>
 		</section>
 		<section id="roster">
 			<h2>Roster</h2>
@@ -82,21 +131,21 @@
 			</table>
 		</section>
 		<section id="contract-info">
-			<h2>Contract Information</h2>
-			<p>Total salary cap hit: [Insert Total Salary Cap Hit]</p>
-			<p>Total contracts remaining: [Insert Total Contracts Remaining]</p>
-			<p>Average contract length: [Insert Average Contract Length]</p>
-			<p>Average salary per player: [Insert Average Salary Per Player]</p>
+			<h2>Current Contract Information</h2>
+			<p>Current Contracts Given: 11</p>
+			<p>Available Contracts Remaining: 0</p>
+			<p>Available Contract Extensions: 2</p>
+			<p>Franchise Tags Available: 1</p>
+			<p>Next Season Dead Money: $0</p>
 		</section>
-		<section id="auction-draft-history">
-			<h2>Auction Draft History</h2>
-			<table id="auction-draft-history">
+		<section id="auction-draft-results">
+			<h2>2024 Auction Draft Results</h2>
+			<table id="auction-draft-results">
 				<thead>
 					<tr>
 						<th>Player Name</th>
 						<th>Position</th>
 						<th>Auction Price</th>
-						<th>Year Acquired</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -104,27 +153,24 @@
 						<td>[Insert Player 1]</td>
 						<td>[Insert Position]</td>
 						<td>[Insert Auction Price]</td>
-						<td>[Insert Year Acquired]</td>
 					</tr>
 					<tr>
 						<td>[Insert Player 2]</td>
 						<td>[Insert Position]</td>
 						<td>[Insert Auction Price]</td>
-						<td>[Insert Year Acquired]</td>
 					</tr>
 					<!-- Add more players here -->
 				</tbody>
 			</table>
 		</section>
-		<section id="rookie-draft-history">
-			<h2>Rookie Draft History</h2>
-			<table id="rookie-draft-history">
+		<section id="rookie-draft-results">
+			<h2>2024 Rookie Draft Results</h2>
+			<table id="rookie-draft-results">
 				<thead>
 					<tr>
 						<th>Player Name</th>
 						<th>Position</th>
 						<th>Draft Pick Number</th>
-						<th>Year Acquired</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -132,27 +178,26 @@
 						<td>[Insert Player 1]</td>
 						<td>[Insert Position]</td>
 						<td>[Insert Draft Pick Number]</td>
-						<td>[Insert Year Acquired]</td>
 					</tr>
 					<tr>
 						<td>[Insert Player 2]</td>
 						<td>[Insert Position]</td>
 						<td>[Insert Draft Pick Number]</td>
-						<td>[Insert Year Acquired]</td>
 					</tr>
 					<!-- Add more players here -->
 				</tbody>
 			</table>
 		</section>
-		<section id="faab-history">
-			<h2>FAAB History</h2>
-			<table id="faab-history">
+		<section id="faab-results">
+			<h2>2024 FAAB </h2>
+			<table id="faab-results">
 				<thead>
 					<tr>
-						<th>Player Name</th>
+						<th>Player Acquired</th>
 						<th>Position</th>
 						<th>FAAB Bid Amount</th>
-						<th>Year Acquired</th>
+						<th>Player Dropped</th>
+						<th>Waiver/Free Agent</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -160,13 +205,15 @@
 						<td>[Insert Player 1]</td>
 						<td>[Insert Position]</td>
 						<td>[Insert FAAB Bid Amount]</td>
-						<td>[Insert Year Acquired]</td>
+						<td>[Insert Player Dropped]</td>
+						<td>[Waiver/Free Agent]</td>
 					</tr>
 					<tr>
 						<td>[Insert Player 2]</td>
 						<td>[Insert Position]</td>
 						<td>[Insert FAAB Bid Amount]</td>
-						<td>[Insert Year Acquired]</td>
+						<td>[Insert Player Dropped</td>
+						<td>[Waiver/Free Agent]</td>
 					</tr>
 					<!-- Add more players here -->
 				</tbody>
@@ -177,6 +224,7 @@
 			<table id="team-captains">
 				<thead>
 					<tr>
+						<th>Unit</th>
 						<th>Player Name</th>
 						<th>Position</th>
 						<th>Captain Since (Year)</th>
@@ -184,11 +232,13 @@
 				</thead>
 				<tbody>
 					<tr>
+						<td>[Offense/Defense]</td>
 						<td>[Insert Player 1]</td>
 						<td>[Insert Position]</td>
 						<td>[Insert Year]</td>
 					</tr>
 					<tr>
+						<td>[Offense/Defense]</td>
 						<td>[Insert Player 2]</td>
 						<td>[Insert Position]</td>
 						<td>[Insert Year]</td>
@@ -197,11 +247,26 @@
 				</tbody>
 			</table>
 		</section>
+		<section id="team-history">
+			<h2>Team History</h2>
+			<p>The Stockton Stormbringers were founded in 2024 and have strive to have a rich history of success, including:</p>
+			<ul>
+				<li>0 championships won</li>
+				<li>0 division titles won</li>
+				<li>0 league MVPs and other individual awards</li>
+				<li>0 All-ADL Players</li>
+				<li>0 Hall of Fame</li>
+			</ul>
+		</section>
 		<section id="team-records">
 			<h2>Team Records</h2>
 			<p>Wins and losses: [Insert Wins and Losses]</p>
 			<p>Points scored and allowed: [Insert Points Scored and Allowed]</p>
 			<p>Win streaks and losing streaks: [Insert Win Streaks and Losing Streaks]</p>
+			<p>Highest Scoring Single Season: 0</p>
+			<p>Highest Scoring Single Game: 0</p>
+			<p>Lowest Scoring Single Season: 0</p>
+			<p>Lowest Scoring Single Game: 0</p>
 		</section>
 		<section id="team-awards">
 			<h2>Team Awards</h2>
@@ -209,67 +274,8 @@
 			<p>Division titles won: [Insert Number]</p>
 			<p>League MVPs and other individual awards: [Insert Number]</p>
 		</section>
-		<section id="news-and-updates">
-			<h2>News and Updates</h2>
-			<p>Recent transactions (trades, signings, etc.): [Insert Recent Transactions]</p>
-			<p>Injury reports: [Insert Injury Reports]</p>
-			<p>Coaching changes: [Insert Coaching Changes]</p>
-		</section>
-		<section id="trade-block">
-			<h2>Trade Block</h2>
-			<table id="trade-block">
-				<thead>
-					<tr>
-						<th>Player Name</th>
-						<th>Position</th>
-						<th>Contract Information</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>[Insert Player 1]</td>
-						<td>[Insert Position]</td>
-						<td>[Insert Contract Years Remaining, Salary, etc.]</td>
-					</tr>
-					<tr>
-						<td>[Insert Player 2]</td>
-						<td>[Insert Position]</td>
-						<td>[Insert Contract Years Remaining, Salary, etc.]</td>
-					</tr>
-					<!-- Add more players here -->
-				</tbody>
-			</table>
-		</section>
-		<section id="trade-auction">
-			<h2>Trade Auction</h2>
-			<table id="trade-auction">
-				<thead>
-					<tr>
-						<th>Player Name</th>
-						<th>Position</th>
-						<th>Current Bid</th>
-						<th>Auction End Date</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>[Insert Player 1]</td>
-						<td>[Insert Position]</td>
-						<td>[Insert Current Bid]</td>
-						<td>[Insert Auction End Date]</td>
-					</tr>
-					<tr>
-						<td>[Insert Player 2]</td>
-						<td>[Insert Position]</td>
-						<td>[Insert Current Bid]</td>
-						<td>[Insert Auction End Date]</td>
-					</tr>
-					<!-- Add more players here -->
-				</tbody>
-			</table>
-		</section>
 		<section id="waivers">
-			<h2>Waivers</h2>
+			<h2>Trades</h2>
 			<table id="waivers">
 				<thead>
 					<tr>
