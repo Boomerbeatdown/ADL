@@ -108,33 +108,276 @@ margin-bottom: 20px;
 display: block;
 }
 
-/* Team Bio Section */
-.team-overview {
-display: flex;
-flex-direction: column;
-margin-bottom: 20px;
+/* Team Bio Section Styles */
+.team-bio-section {
+  padding: 40px;
+  background-color: #f0f2f5;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.team-description, .style-of-play {
-margin-bottom: 20px;
+.team-bio-section h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.visual-elements {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-gap: 20px;
+/* Individual Bio Items */
+.team-bio-item {
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.visual-elements h4 {
-margin-bottom: 10px;
+.team-bio-item h3 {
+  font-size: 2rem;
+  color: #1e90ff;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #1e90ff;
+  padding-bottom: 10px;
 }
 
-.team-logo-2, .uniform-image, .stadium-image {
-width: 100%;
-height: auto;
-border-radius: 10px;
-border: 2px solid #ddd;
-margin-bottom: 10px;
+/* Owner Info */
+.owner-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.owner-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1e90ff;
+}
+
+.owner-details p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Logo Gallery */
+.logo-gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo-gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  padding: 10px;
+}
+
+/* Color Palette */
+.color-palette {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.color-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Mascot Info */
+.mascot-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mascot-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 3px solid #1e90ff;
+}
+
+.mascot-details p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Slogan */
+.team-bio-item blockquote {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #333;
+  border-left: 5px solid #1e90ff;
+  padding-left: 15px;
+  margin: 0;
+}
+
+/* Stadium Info */
+.stadium-info {
+  text-align: center;
+}
+
+.stadium-photo {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+}
+
+.stadium-info p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Uniform Gallery */
+.uniform-gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.uniform-item {
+  text-align: center;
+}
+
+.uniform-item img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.uniform-item p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Players List */
+.players-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.player-item {
+  text-align: center;
+  width: 200px;
+}
+
+.player-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1e90ff;
+  margin-bottom: 10px;
+}
+
+.player-item p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Rivalries List */
+.rivalries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rivalry-item {
+  background-color: #f9fafb;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.rivalry-item p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Awards List */
+.awards-list {
+  list-style: disc inside;
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  padding-left: 20px;
+}
+
+/* Record Table */
+.record-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.record-table th,
+.record-table td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.record-table th {
+  background-color: #1e90ff;
+  color: #fff;
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .owner-info,
+  .mascot-info {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .logo-gallery,
+  .color-palette,
+  .uniform-gallery,
+  .players-list {
+      justify-content: center;
+  }
+
+  .color-item {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .color-item p {
+      margin-top: 10px;
+  }
 }
 
 /* Salary & Contracts Section */
@@ -592,6 +835,46 @@ display: inline-block;
 margin: 0;
 font-size: 1rem;
 color: #333;
+}
+
+/* Trophy Case Section */
+.trophy-section {
+  margin-bottom: 40px;
+}
+
+.trophy-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #1e90ff;
+}
+
+.trophy-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trophy-list li {
+  background-color: #f9fafb;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: calc(50% - 10px);
+  display: flex;
+  align-items: center;
+}
+
+.trophy-list img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.trophy-list li strong {
+  color: #333;
 }
 
 
