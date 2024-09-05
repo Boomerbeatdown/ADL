@@ -416,36 +416,249 @@ color: #fff;
 }
 
 /* Trade Hub Section */
+/* Container styling for the Trade Block */
+.trade-block {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+/* Header Styling */
+.trade-header {
+  font-size: 24px;
+  color: #fff;
+  background-color: #2e8b57;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Notice Section */
+.notice {
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.notice p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.edit-button {
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.edit-button:hover {
+  background-color: #1c86ee;
+}
+
+/* Team Section Styling */
+.team-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-section {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px;
+}
+
+.team-section h4 {
+  background-color: #2e8b57;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.team-section table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.team-section table td {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+.propose-trade {
+  display: block;
+  margin-top: 10px;
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.propose-trade:hover {
+  text-decoration: underline;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+  max-width: 600px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+.close-button {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #000;
+}
+
+/* Input and button styling inside the modal */
+.modal-content input[type="text"], .modal-content textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: block;
+}
+
+.modal-content button {
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.modal-content button:hover {
+  background-color: #1c86ee;
+}
+
+
 .trade-section {
-margin-bottom: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.trade-section h3 {
-font-size: 1.8rem;
-margin-bottom: 10px;
-color: #1e90ff;
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0066cc;
 }
 
-.trade-list {
-list-style: none;
-padding: 0;
+.auction-board {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.trade-list li {
-background-color: #f9fafb;
-padding: 15px;
-border: 1px solid #ddd;
-border-radius: 5px;
-margin-bottom: 10px;
+.auction-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
 
-.trade-list li strong {
-display: inline-block;
-width: 150px;
-color: #333;
+.auction-info {
+  flex: 1;
 }
 
+.auction-title {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
 
+.auction-info p, .auction-info h5 {
+  margin: 5px 0;
+}
+
+.bid-history {
+  margin-top: 10px;
+}
+
+.bid-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bid-list li {
+  margin-bottom: 5px;
+}
+
+.auction-bid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.team-input, .bid-input {
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.bid-button {
+  padding: 5px 10px;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bid-button:hover {
+  background-color: #004a99;
+}
+
+.countdown {
+  color: #e74c3c;
+  font-weight: bold;
+}
 
 /* Tables */
 table {
